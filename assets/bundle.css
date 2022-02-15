@@ -1,0 +1,2550 @@
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./src/scss/main.scss ***!
+  \*******************************************************************************************************************************************************************************/
+/**
+ * entry file for Tailwind CSS
+ * and other style files
+ */
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+  .scroll-animation {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .scroll-animation {
+    flex-direction: row;
+  }
+}
+.on-overflow {
+  overflow: hidden;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+.navigation-container_transparent {
+  background-color: transparent;
+}
+.navigation_container_black {
+  background-color: #000000;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-black {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.navigation_responsive_desktop {
+  height: var(--navigation-desktop-height);
+}
+.navigation_responsive_mobile {
+  width: 100%;
+  height: var(--navigation-mobile-height);
+}
+.navigation_responsive_desktop__left-container {
+  display: flex;
+  height: initial;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.navigation_responsive_desktop__right-container {
+  display: flex;
+  height: inherit;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.navigation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.navigation__text_white {
+  color: #ffffff;
+}
+.navigation__text_black {
+  color: #000000;
+}
+.navigation-drawer {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: var(--main-blue);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+}
+.navigation-drawer > * + * {
+  margin-top: 80px;
+}
+.navigation-drawer_state_closed {
+  transform: translateY(-100vh);
+}
+.navigation-drawer__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  text-decoration: none;
+}
+.navigation-drawer__text_total-price {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+.navigation_responsive_desktop .navigation__item_beautiful-numbers {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navigation_responsive_desktop .navigation__item_collection {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navigation_responsive_desktop .navigation__item_shopping-bag {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+.navigation_responsive_desktop .navigation__item_total-items {
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.navigation_responsive_desktop .navigation__item_total-price {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navigation_responsive_mobile .navigation__item_total-items {
+  margin-right: 15px;
+}
+.navigation_responsive_mobile .navigation__item_hamburger {
+  margin-left: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .navigation_responsive_desktop {
+    display: none;
+  }
+
+  .navigation {
+    width: var(--container-desktop-width);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .navigation_responsive_mobile {
+    display: none;
+  }
+
+  .navigation-drawer {
+    display: none;
+  }
+
+  .navigation {
+    width: var(--container-desktop-width);
+  }
+}
+body {
+  margin: 0;
+  --main-blue: #e0f9ff;
+  --main-dark-green: #01303f;
+  --main-yellow: #f4f8e9;
+  --container-desktop-width: 100%;
+  --grid-gutter: 20px;
+  --half-grid-gutter: 10px;
+  --navigation-desktop-height: 70px;
+  --navigation-mobile-height: 64px;
+}
+.grid-12-col-width-auto {
+  width: auto;
+  margin-left: var(--half-grid-gutter);
+  margin-right: var(--half-grid-gutter);
+}
+.grid-12-col-width-auto > * {
+  box-sizing: border-box;
+}
+.grid-12-col-width-full {
+  width: 100%;
+  margin-left: var(--half-grid-gutter);
+  margin-right: var(--half-grid-gutter);
+}
+.grid-12-col-width-full > * {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  .col-0-sm {
+    display: none;
+  }
+
+  .col-1-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(8.33% - var(--grid-gutter));
+  }
+
+  .col-2-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(16.66% - var(--grid-gutter));
+  }
+
+  .col-3-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(25% - var(--grid-gutter));
+  }
+
+  .col-4-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(33.33% - var(--grid-gutter));
+  }
+
+  .col-5-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(41.66% - var(--grid-gutter));
+  }
+
+  .col-6-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(50% - var(--grid-gutter));
+  }
+
+  .col-7-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(58.33% - var(--grid-gutter));
+  }
+
+  .col-8-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(66.66% - var(--grid-gutter));
+  }
+
+  .col-9-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(75% - var(--grid-gutter));
+  }
+
+  .col-10-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(83.33% - var(--grid-gutter));
+  }
+
+  .col-11-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(91.66% - var(--grid-gutter));
+  }
+
+  .col-12-sm {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(100% - var(--grid-gutter));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .col-0-lg {
+    display: none;
+  }
+
+  .col-half-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(4.16% - var(--grid-gutter));
+  }
+
+  .col-1-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(8.33% - var(--grid-gutter));
+  }
+
+  .col-2-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(16.66% - var(--grid-gutter));
+  }
+
+  .col-3-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(25% - var(--grid-gutter));
+  }
+
+  .col-4-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(33.33% - var(--grid-gutter));
+  }
+
+  .col-5-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(41.66% - var(--grid-gutter));
+  }
+
+  .col-6-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(50% - var(--grid-gutter));
+  }
+
+  .col-7-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(58.33% - var(--grid-gutter));
+  }
+
+  .col-8-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(66.66% - var(--grid-gutter));
+  }
+
+  .col-9-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(75% - var(--grid-gutter));
+  }
+
+  .col-10-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(83.33% - var(--grid-gutter));
+  }
+
+  .col-11-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(91.66% - var(--grid-gutter));
+  }
+
+  .col-12-lg {
+    margin-left: var(--half-grid-gutter);
+    margin-right: var(--half-grid-gutter);
+    width: calc(100% - var(--grid-gutter));
+  }
+}
+.reset-horizontal-margins {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media screen and (max-width: 1000px) {
+  .site-content {
+    margin-top: var(--navigation-mobile-height);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .site-content {
+    margin-top: var(--navigation-desktop-height);
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/cart/ShoppingBag.vue?vue&type=style&index=0&id=38fb4078&lang=scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.shoppingBag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  min-height: calc(100vh - var(--navigation-desktop-height));
+}
+.shoppingBag-container {
+  background-color: var(--main-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.shoppingBag__title {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  margin-bottom: 3px;
+}
+.shoppingBag_side_left {
+  padding-top: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shoppingBag-container_side_right {
+  background-color: var(--main-yellow);
+  padding-top: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-right: 0;
+}
+.table__product-line-container {
+  min-width: 100%;
+  min-height: 150px;
+}
+.table-names {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.table-name {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.table__product-line {
+  display: flex;
+  min-width: 100%;
+  min-height: 150px;
+}
+.shoppingBag__line {
+  border-bottom: 1px solid #000000;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.shoppingBag__line_thick {
+  border-bottom: 2px solid #000000;
+  margin-top: 20px;
+  margin-bottom: 18px;
+}
+.table__product-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.table__product-description {
+  position: relative;
+}
+.table__product-description-name {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  position: absolute;
+  top: 0;
+}
+.table__product-description-size {
+  margin-left: 20px;
+}
+.table__product-line-item {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.table__quantity-value-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.table__quantity-value {
+  margin-right: 11px;
+}
+.table__subtotal-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.shoppingBag_side_right {
+  width: 100%;
+}
+.grid-12-col-width-auto-left-correct {
+  margin-left: 20px;
+}
+.summary__product-name {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.summary_product-description {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.summary_product-description-items > * + * {
+  margin-left: 20px;
+}
+.summary_product-item {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.summary_product-subtotal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.summary_product-shipping {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.summary_product-total {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.summary_product-total-item {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.summary__button {
+  background: #000000;
+  border-radius: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border-width: 0;
+}
+.summary__button-text {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/category/ProductCategory.vue?vue&type=style&index=0&id=84ab223a&lang=scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.category {
+  background-color: var(--main-blue);
+  padding-bottom: 200px;
+}
+.product-name-container {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+}
+.product-name {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 60px;
+  color: #000000;
+}
+.category__item {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.category__item_side_left {
+  flex-direction: row;
+}
+.category__item_side_right {
+  flex-direction: row-reverse;
+}
+.category__item-image-container {
+  transform: scale(0.6);
+}
+.category__item-image-link {
+  cursor: pointer;
+}
+.category__item-image {
+  width: 100%;
+}
+.category__item-image_hover {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+@media screen and (max-width: 1000px) {
+.category__item {
+    padding-top: 100px;
+}
+}
+@media screen and (min-width: 1000px) {
+.category__item {
+    padding-top: 140px;
+}
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/items/GlobalArrow.vue?vue&type=style&index=0&id=482dfa52&lang=scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.arrow {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/items/GlobalButtonDashed.vue?vue&type=style&index=0&id=9f66d56c&lang=scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.button-dashed_color_white {
+  color: #ffffff;
+  border: 2px dashed #ffffff;
+}
+.button-dashed_color_black {
+  color: #000000;
+  border: 2px dashed #000000;
+}
+.button-dashed {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.button-dashed__text {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/items/GlobalEye.vue?vue&type=style&index=0&id=759014ba&lang=scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  background: #fff;
+  margin: 1px;
+}
+.eye:after {
+  position: absolute;
+  bottom: 20px;
+  right: 12px;
+  width: 14px;
+  height: 14px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/items/GlobalMovingArrows.vue?vue&type=style&index=0&id=538f0682&lang=scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.moving-arrows {
+  background-color: var(--main-yellow);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.moving-arrows-collection {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.moving-arrows__arrow {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  height: 40px;
+  overflow: hidden;
+}
+.moving-arrows__arrow_side_left {
+  width: calc(50vw - 140px);
+  padding-right: 20px;
+}
+.moving-arrows__arrow_side_left > * + * {
+  margin-right: 40px;
+}
+.moving-arrows__arrow_side_right {
+  width: calc(50vw - 140px);
+  flex-direction: row;
+  padding-left: 20px;
+}
+.moving-arrows__arrow_side_right > * + * {
+  margin-left: 40px;
+}
+@media screen and (max-width: 1000px) {
+.collection__button {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+}
+@media screen and (min-width: 1000px) {
+.collection__button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.moving-arrows-collection {
+    width: var(--container-desktop-width);
+}
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/items/GlobalMovingEyes.vue?vue&type=style&index=0&id=77767a52&lang=scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.collection__see-collection {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.collection__eye {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  height: 40px;
+  overflow: hidden;
+}
+.collection__eye_side_left {
+  width: calc(50vw - 140px);
+}
+.collection__eye_side_left > * + * {
+  margin-right: 40px;
+}
+.collection__eye_side_right {
+  width: calc(50vw - 140px);
+  flex-direction: row;
+}
+.collection__eye_side_right > * + * {
+  margin-left: 40px;
+}
+@media screen and (max-width: 1000px) {
+.collection__button {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+}
+@media screen and (min-width: 1000px) {
+.collection__button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+}
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/vue3-carousel/dist/carousel.css ***!
+  \******************************************************************************************************************************************************************/
+.carousel {
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.carousel * {
+  box-sizing: border-box;
+}
+
+.carousel__track {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.carousel__viewport {
+  overflow: hidden;
+}
+
+.carousel__icon {
+  width: var(--vc-icn-width);
+  height: var(--vc-icn-width);
+  fill: currentColor;
+}
+
+:root {
+  /* Color */
+  --vc-clr-primary: #642afb;
+  --vc-clr-secondary: #8e98f3;
+  --vc-clr-white: #ffffff;
+
+  /* Icon */
+  --vc-icn-width: 1.2em;
+
+  /* Navigation */
+  --vc-nav-width: 30px;
+  --vc-nav-color: #ffffff;
+  --vc-nav-background-color: var(--vc-clr-primary);
+
+  /* Pagination */
+  --vc-pgn-width: 10px;
+  --vc-pgn-height: 5px;
+  --vc-pgn-margin: 5px;
+  --vc-pgn-border-radius: 0;
+  --vc-pgn-background-color: var(--vc-clr-secondary);
+  --vc-pgn-active-color: var(--vc-clr-primary);
+}
+
+.carousel__pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.carousel__pagination-button {
+  margin: var(--vc-pgn-margin);
+  width: var(--vc-pgn-width);
+  height: var(--vc-pgn-height);
+  border-radius: var(--vc-pgn-height);
+  border: 0;
+  cursor: pointer;
+  background-color: var(--vc-pgn-background-color);
+}
+
+.carousel__pagination-button--active {
+  background-color: var(--vc-pgn-active-color);
+}
+
+.carousel__prev,
+.carousel__next {
+  background-color: var(--vc-nav-background-color);
+  border-radius: var(--vc-nav-width);
+  width: var(--vc-nav-width);
+  height: var(--vc-nav-width);
+  text-align: center;
+  font-size: calc(var(--vc-nav-width) * 2 / 3);
+  padding: 0;
+  color: var(--vc-nav-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__prev {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.carousel__next {
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.carousel__slide {
+  scroll-snap-stop: auto;
+  flex-shrink: 0;
+  margin: 0;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/items/GlobalSliderBlack.vue?vue&type=style&index=0&id=4af496a7&lang=scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel {
+  height: inherit;
+}
+.carousel__viewport {
+  height: inherit;
+}
+.carousel__track {
+  height: inherit;
+}
+.carousel__pagination {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.carousel__pagination-button {
+  margin: 5px;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+.carousel_color_black .carousel__pagination-button {
+  border: 1px solid #000000;
+}
+.carousel_color_black .carousel__pagination-button--active {
+  background-color: #000000;
+}
+.slide-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/items/GlobalSliderWhite.vue?vue&type=style&index=0&id=ce26a45e&lang=scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel {
+  height: inherit;
+}
+.carousel__viewport {
+  height: inherit;
+}
+.carousel__track {
+  height: inherit;
+}
+.carousel__pagination {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.carousel__pagination-button {
+  margin: 5px;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+.carousel_color_white .carousel__pagination-button {
+  border: 1px solid #ffffff;
+}
+.carousel_color_white .carousel__pagination-button--active {
+  background-color: #ffffff;
+}
+.slide-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/sections/GlobalFooter.vue?vue&type=style&index=0&id=3585841a&lang=scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.lottie-animation {
+  width: 300px;
+  height: 300px;
+}
+footer {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer__info-upper-container_responsive_desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.info-upper-container_side_left_responsive_mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.footer__info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.footer__info_responsive_mobile {
+  width: 100%;
+}
+.footer__info-lower-container_responsive_desktop {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-text__container_responsive_desktop {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.info-text__container_responsive_mobile {
+  height: 94px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.info-lower-container_side_right {
+  display: flex;
+}
+.info-lower-container_side_left_responsive_mobile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  height: 135px;
+  margin-bottom: 60px;
+}
+.footer__info-text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.instagram-icon-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.instagram-icon_responsive_mobile {
+  margin-top: 35px;
+}
+.footer-line {
+  border-bottom: 2px solid #ffffff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-line-container {
+  display: flex;
+  flex-direction: row;
+}
+.copyrights {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.footer__currency-select {
+  cursor: pointer;
+}
+.currency-select__icon {
+  margin-left: 10px;
+}
+@media screen and (max-width: 1000px) {
+.footer__info_responsive_desktop {
+    display: none;
+}
+.lottie-animation {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.instagram-icon-container {
+    justify-content: flex-start;
+}
+}
+@media screen and (min-width: 1000px) {
+.footer__info_responsive_desktop {
+    width: var(--container-desktop-width);
+}
+.footer__info_responsive_mobile {
+    display: none;
+}
+.info-lower-container_side_right {
+    justify-content: flex-end;
+}
+.lottie-animation {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.instagram-icon-container {
+    justify-content: flex-end;
+}
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/sections/GlobalGoodNews.vue?vue&type=style&index=0&id=24fb176f&lang=scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.good-news {
+  background-color: var(--main-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.good-news_responsive_desktop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.good-news__header {
+  margin-bottom: 50px;
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 98px;
+  color: #012045;
+}
+.good-news__header_responsive_mobile {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 60px;
+  color: #000000;
+}
+.good-news__product-container_responsive_desktop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.product__details-container_desktop {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.product__details-container_mobile {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.product__image {
+  width: 100%;
+  object-fit: cover;
+}
+.product__name {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.product__price {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: right;
+  color: #000000;
+}
+.product-line {
+  border-bottom: 2px solid #000000;
+}
+@media screen and (max-width: 1000px) {
+.good-news_responsive_desktop {
+    display: none;
+}
+.good-news_responsive_mobile {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: var(--container-desktop-width);
+}
+.product__name {
+    float: left;
+}
+.product__price {
+    float: right;
+}
+}
+@media screen and (min-width: 1000px) {
+.good-news_responsive_desktop {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: var(--container-desktop-width);
+}
+.good-news_responsive_mobile {
+    display: none;
+}
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/global/sections/GlobalNarrowVideo.vue?vue&type=style&index=0&id=10144671&lang=scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.narrow-video {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.sand {
+  background-color: var(--main-yellow);
+}
+.darkGreen {
+  background-color: var(--main-dark-green);
+}
+.narrow-video__image-continer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.narrow-video__image {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+.narrow-video__image-continer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+}
+@media screen and (min-width: 1000px) {
+.narrow-video__image-continer {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.narrow-video-content {
+    width: var(--container-desktop-width);
+}
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/home/sections/HomeCollection.vue?vue&type=style&index=0&id=fd6e4f56&lang=scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.collection {
+  background-color: var(--main-dark-green);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.collection_responsive_desktop {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+.collection__header {
+  white-space: nowrap;
+}
+.collection__text {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+.collection__text_size_large {
+  font-size: 80px;
+  line-height: 98px;
+}
+.collection__text_size_normal {
+  font-size: 52px;
+  line-height: 60px;
+}
+.collection__image-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.collection__image-container_responsive_mobile {
+  margin-top: 40px;
+}
+.collection__image-container-upper_responsive_desktop {
+  margin-top: 50px;
+}
+.collection__image-container-lower_responsive_desktop {
+  margin-top: 70px;
+}
+.collection__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.horizontal-text_mobile {
+  position: relative;
+  display: inline-block;
+}
+@media screen and (max-width: 1000px) {
+.collection_responsive_desktop {
+    display: none;
+}
+.collection_responsive_mobile {
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+.collection__eucalyptus {
+    margin-right: 20px;
+}
+.collection__text_size_normal {
+    margin-right: 30px;
+}
+}
+@media screen and (min-width: 1000px) {
+.collection_responsive_mobile {
+    display: none;
+}
+.collection_responsive_desktop {
+    margin-top: 120px;
+    width: var(--container-desktop-width);
+    flex-direction: column;
+}
+.collection__eucalyptus {
+    margin-right: 32px;
+}
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/home/sections/HomeInfoBeautifulNumbers.vue?vue&type=style&index=0&id=59583abe&lang=scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.info-beaufitul-numbers {
+  background-color: var(--main-yellow);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.info-beaufitul-numbers__content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.info-beaufitul-numbers__container_side_left {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: flex-start;
+  align-self: center;
+}
+.info-beaufitul-numbers__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.info-beaufitul-numbers__image {
+  max-width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+.info-beaufitul-numbers__content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: column-reverse;
+}
+.info-beaufitul-numbers__container_side_left {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+}
+@media screen and (min-width: 1000px) {
+.info-beaufitul-numbers__content {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: var(--container-desktop-width);
+    flex-direction: row;
+}
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/home/sections/HomeInfoGallery.vue?vue&type=style&index=0&id=d5ddadc6&lang=scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.info-gallery {
+  background-color: var(--main-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.info-gallery__content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.info-gallery__container_side_left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: flex-start;
+  align-self: center;
+}
+.info-gallery__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.info-gallery__image {
+  max-width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+.info-gallery__content {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+.info-gallery__container_side_left {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+}
+@media screen and (min-width: 1000px) {
+.info-gallery__content {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    width: var(--container-desktop-width);
+    flex-direction: row;
+}
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/home/sections/HomeNowIsBetter.vue?vue&type=style&index=0&id=210d2109&lang=scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.now-is-better-text_size_normal {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+}
+.now-is-better {
+  background-color: var(--main-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.now-is-better-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+.now-is-better-scroll-animation {
+  margin-top: 130px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+}
+.now-is-better__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.now-is-better__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.now-is-better__oval {
+  margin-top: 28px;
+}
+@media screen and (min-width: 1000px) {
+.now-is-better-container {
+    width: var(--container-desktop-width);
+}
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/home/sections/HomeVideoHeader.vue?vue&type=style&index=0&id=2a762741&lang=scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.video-header {
+  background-color: var(--main-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.video-header__video {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 1000px) {
+.video-header-content {
+    width: var(--container-desktop-width);
+}
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/navigation/item/NavHamburger.vue?vue&type=style&index=0&id=8ce962e4&lang=scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.hamburger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.hamburger__line-upper {
+  transition: 0.4s;
+}
+.hamburger__line-lower {
+  transition: 0.4s;
+}
+.hamburger__line-upper_state_opened {
+  transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 7);
+}
+.hamburger__line-lower_state_opened {
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, -8);
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/navigation/NavigationBar.vue?vue&type=style&index=0&id=1a83b38b&lang=scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.navigation__item_shopping-bag {
+  cursor: pointer;
+}
+.navigation__item_total-items {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigation__item_total-items_white {
+  background-color: #ffffff;
+}
+.navigation__item_total-items_black {
+  background-color: #000000;
+}
+.navigation__item_total-items_text_color {
+  color: inherit;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/OneHalfSlider.vue?vue&type=style&index=0&id=5b4d30f4&lang=scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.carousel__prev,
+.carousel__next {
+  transform: initial;
+  background-color: transparent;
+  border-radius: 0;
+  width: 80px;
+  height: auto;
+  text-align: center;
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16.8px;
+  line-height: 20px;
+  padding: 0;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.carousel__prev {
+  margin-left: 30px;
+  justify-content: flex-start;
+}
+.carousel__next {
+  margin-right: 30px;
+  justify-content: flex-end;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/animations/LifeShirtAnimation.vue?vue&type=style&index=0&id=481f5fb8&lang=scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+.scroll-animation {
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px) {
+.scroll-animation {
+    flex-direction: row;
+}
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/animations/LightningJacketAnimation.vue?vue&type=style&index=0&id=4bfde386&lang=scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+.scroll-animation {
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px) {
+.scroll-animation {
+    flex-direction: row;
+}
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/animations/MarathonHoodieAnimation.vue?vue&type=style&index=0&id=0e318e4c&lang=scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+.scroll-animation {
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px) {
+.scroll-animation {
+    flex-direction: row;
+}
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/animations/MarathonPantsAnimation.vue?vue&type=style&index=0&id=897fbbd0&lang=scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+.scroll-animation {
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px) {
+.scroll-animation {
+    flex-direction: row;
+}
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/animations/OpinionCoatAnimation.vue?vue&type=style&index=0&id=522cc1c6&lang=scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+.scroll-animation {
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px) {
+.scroll-animation {
+    flex-direction: row;
+}
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/animations/PedestrianSweaterAnimation.vue?vue&type=style&index=0&id=7c0d7f98&lang=scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+.scroll-animation {
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px) {
+.scroll-animation {
+    flex-direction: row;
+}
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/items/animations/ProgressShirtAnimation.vue?vue&type=style&index=0&id=09d36815&lang=scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-scroll-animation {
+  background-color: var(--main-blue);
+}
+.scroll-animation {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.animation-slides {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+}
+.animation-slide-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.scroll-animation__title {
+  font-family: "GT-Sectra-Display-Bold", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 43.3973px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  white-space: nowrap;
+}
+.scroll-animation__line {
+  margin-top: 17px;
+  margin-bottom: 23px;
+}
+.scroll-animation__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.2877px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+.animation-container {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 1000px) {
+.scroll-animation {
+    flex-direction: column;
+}
+}
+@media screen and (min-width: 1000px) {
+.scroll-animation {
+    flex-direction: row;
+}
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/sections/ProductDetails.vue?vue&type=style&index=0&id=382e9ac6&lang=scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-details {
+  background-color: var(--main-blue);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.product-details__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-add-bag {
+  margin-bottom: 110px;
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.product-add-bag > * + * {
+  margin-top: 20px;
+}
+.product-add-bag__title {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 60px;
+  color: #000000;
+}
+.product-add-bag__price {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.product-add-bag__description {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+}
+.product-add-bag__cut {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.product-add-bag__cut-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-add-bag__cut-button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.product-add-bag__cut-button-container > * + * {
+  margin-left: 16px;
+}
+.product-add-bag__cut-button {
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 30px;
+  padding: 7px 20px 7px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+.product-add-bag__cut-button-active {
+  background-color: #000000;
+  color: #ffffff;
+}
+.product-add-bag__size {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-add-bag__size-text-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 120px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.product-add-bag__size-main {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.product-add-bag__size-guide {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #000000;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.product-add-bag__size-button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product-add-bag__size-button-container > * + * {
+  margin-left: 16px;
+}
+.product-add-bag__size-button {
+  border: 1.5px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+}
+.product-add-bag__size-button-active {
+  background-color: #000000;
+  color: #ffffff;
+}
+.product-add-bag__button {
+  background: #000000;
+  border-radius: 30px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.product-add-bag__button-text {
+  font-family: "GT-Sectra-Display-Regular", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+.product-add-bag__line {
+  border-bottom: 2px solid #000000;
+}
+@media screen and (max-width: 1000px) {
+.product-details__content {
+    flex-direction: column;
+}
+.product-add-bag {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+}
+@media screen and (min-width: 1000px) {
+.product-details {
+    height: calc(100vh - var(--navigation-desktop-height));
+}
+.product-details__content {
+    height: 100%;
+    flex-direction: row;
+    width: var(--container-desktop-width);
+}
+.product-add-bag {
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+.product-slider {
+    height: inherit;
+}
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/sections/ProductDescription.vue?vue&type=style&index=0&id=13428452&lang=scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-description {
+  background-color: var(--main-dark-green);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.product-description__content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.product-description__upper-text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.product-description__lower-text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.product-description__line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30px;
+  border: 1px solid #ffffff;
+}
+@media screen and (max-width: 1000px) {
+.product-description__content {
+    flex-direction: column;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.product-description__content .product-description__info-container_middle {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+}
+@media screen and (min-width: 1000px) {
+.product-description__content {
+    width: var(--container-desktop-width);
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/sections/ProductionProcess.vue?vue&type=style&index=0&id=1690569c&lang=scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.product-process {
+  background-color: var(--main-yellow);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.product-process__content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.product-process__container_side_left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: flex-start;
+  align-self: center;
+}
+.product-process__text {
+  font-family: "ReplicaStd-Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.product-process__image {
+  max-width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+.product-process__content {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+}
+.product-process__container_side_left {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+}
+@media screen and (min-width: 1000px) {
+.product-process__content {
+    margin-top: 45px;
+    width: var(--container-desktop-width);
+    flex-direction: row;
+}
+.product-process__container_side_left {
+    height: 200px;
+}
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/products/LifeShirt.vue?vue&type=style&index=0&id=e3be2f94&lang=scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/products/LightningJacket.vue?vue&type=style&index=0&id=c6ae1bd8&lang=scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/products/MarathonHoodie.vue?vue&type=style&index=0&id=43f77b42&lang=scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/products/MarathonPants.vue?vue&type=style&index=0&id=56c2fe7c&lang=scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/products/OpinionCoat.vue?vue&type=style&index=0&id=6fe6939d&lang=scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/products/PedestrianSweater.vue?vue&type=style&index=0&id=5f06a042&lang=scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/vue-loader/dist/index.js??ruleSet[1].rules[7].use[0]!./src/vue/components/product/products/ProgressShirt.vue?vue&type=style&index=0&id=a823cbb6&lang=scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+

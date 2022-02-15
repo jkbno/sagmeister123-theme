@@ -1,0 +1,52 @@
+<navigation-navigation-bar
+  :navigation-bar-data="{
+    isTransparent: false,
+    shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
+    currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
+    rootUrl: `{{ routes.root_url }}`,
+    cartUrl: `{{ routes.cart_url }}`,
+    collectionUrl: '/collections/all',
+    collectionName: 'Collection',
+    beautifulNumbersUrl: '/pages/beautiful-numbers',
+    beautifulNumbersName: 'Beautiful Numbers',
+    cartItemCount: `{{ cart.item_count }}`,
+    cartTotalPrice: `{{ cart.total_price }}`,
+  }"
+>
+</navigation-navigation-bar>
+<cart-shopping-bag
+  :shopping-bag-data="{
+    cartItems: `{{ cart.items | json | replace: '"', "'" }}`,
+    cartTotalPrice: `{{ cart.total_price }}`,
+    currency: `{{ 'shoppingBag.currency' | t }}`,
+    leftSideTitle: `{{ 'shoppingBag.leftSideTitle' | t }}`,
+    leftSideTableProduct: `{{ 'shoppingBag.leftSideTableProduct' | t }}`,
+    leftSideTablePrice: `{{ 'shoppingBag.leftSideTablePrice' | t }}`,
+    leftSideTableQuantity: `{{ 'shoppingBag.leftSideTableQuantity' | t }}`,
+    leftSideTableSybtotal: `{{ 'shoppingBag.leftSideTableSybtotal' | t }}`,
+    rightSideTitle: `{{ 'shoppingBag.rightSideTitle' | t }}`,
+    rightSideQuantity: `{{ 'shoppingBag.rightSideQuantity' | t }}`,
+    rightSideSubtotal: `{{ 'shoppingBag.rightSideSubtotal' | t }}`,
+    rightSideShipping: `{{ 'shoppingBag.rightSideShipping' | t }}`,
+    rightSideShippingCost: `{{ 'shoppingBag.rightSideShippingCost' | t }}`,
+    rightSideTotal: `{{ 'shoppingBag.rightSideTotal' | t }}`,
+    rightSideCheckout: `{{ 'shoppingBag.rightSideCheckout' | t }}`,
+  }"
+>
+</cart-shopping-bag>
+
+<button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+  checkout
+</button>
+
+  {% schema %}
+{
+  "name": "Main cart",
+  "class": "vue-section",
+  "presets": [
+    {
+      "name": "Main cart"
+    }
+  ]
+}
+{% endschema %}

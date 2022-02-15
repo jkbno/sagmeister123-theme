@@ -1,0 +1,108 @@
+<navigation-navigation-bar
+  :navigation-bar-data="{
+    isTransparent: true,
+    shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
+    currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
+    rootUrl: `{{ routes.root_url }}`,
+    cartUrl: `{{ routes.cart_url }}`,
+    collectionUrl: '/collections/all',
+    collectionName: 'Collection',
+    beautifulNumbersUrl: '/pages/beautiful-numbers',
+    beautifulNumbersName: 'Beautiful Numbers',
+    cartItemCount: `{{ cart.item_count }}`,
+    cartTotalPrice: `{{ cart.total_price }}`,
+  }"
+>
+</navigation-navigation-bar>
+<home-sections-home-video-header>
+</home-sections-home-video-header>
+<home-sections-home-now-is-better
+  :now-is-better-data="{
+    nowIsBetter: `{{ 'home.nowIsBetter' | t }}`,
+    scrollAnimationFirst: `{{ 'home.scrollAnimationFirstLine' | t }}`,
+    scrollAnimationSecond: `{{ 'home.scrollAnimationSecondLine' | t }}`,
+  }"
+>
+</home-sections-home-now-is-better>
+<home-sections-home-collection
+  :collection-data="{
+    collection: `{{ 'home.collection' | t }}`,
+    look: `{{ 'home.look' | t }}`,
+    productImages: {
+      lifeShirtImgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+      lightningJacketImgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+      marathonHoodieImgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+      opinionCoatImgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+      pedestrianSweaterImgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+      progressShirtImgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+    }
+  }"
+>
+</home-sections-home-collection>
+<home-sections-home-info-beautiful-numbers
+  :info-beautiful-numbers-data="{
+    beautifulNumbersText: `{{ 'home.beautifulNumbersText' | t }}`,
+    beautifulNumbersButton: `{{ 'home.beautifulNumbersButton' | t }}`,
+  }"
+>
+</home-sections-home-info-beautiful-numbers>
+<home-sections-home-info-gallery
+  :info-gallery-data="{
+    gallery: `{{ 'home.gallery' | t }}`,
+  }"
+>
+</home-sections-home-info-gallery>
+<global-sections-global-narrow-video
+  :color="darkGreen"
+>
+</global-sections-global-narrow-video>
+<global-sections-global-good-news
+  :good-news-data="{
+    goodNews: `{{ 'home.goodNews' | t }}`,
+    products: {
+      lifeShirt: {
+        title: `{{ all_products["life-shirt"].title }}`,
+        price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+      },
+      lightningJacket: {
+        title: `{{ all_products["lightning-jacket"].title }}`,
+        price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+      },
+      marathonHoodie: {
+        title: `{{ all_products["marathon-hoodie"].title }}`,
+        price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+      },
+      opinionCoat: {
+        title: `{{ all_products["opinion-coat"].title }}`,
+        price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+      },
+      pedestrianSweater: {
+        title: `{{ all_products["pedestrian-sweater"].title }}`,
+        price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+      },
+      progressShirt: {
+        title: `{{ all_products["progress-shirt"].title }}`,
+        price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+      },
+    },
+  }"
+>
+</global-sections-global-good-news>
+  
+  {% schema %}
+{
+  "name": "Main index",
+  "class": "vue-section",
+  "presets": [
+    {
+      "name": "main index"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,75 @@
+<navigation-navigation-bar
+  :navigation-bar-data="{
+    isTransparent: false,
+    shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
+    currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
+    rootUrl: `{{ routes.root_url }}`,
+    cartUrl: `{{ routes.cart_url }}`,
+    collectionUrl: '/collections/all',
+    collectionName: 'Collection',
+    beautifulNumbersUrl: '/pages/beautiful-numbers',
+    beautifulNumbersName: 'Beautiful Numbers',
+    cartItemCount: `{{ cart.item_count }}`,
+    cartTotalPrice: `{{ cart.total_price }}`,
+  }"
+>
+</navigation-navigation-bar>
+<category-product-category
+  :product-category-data="[
+    {
+      handle: `{{ all_products["life-shirt"].handle }}`,
+      title: `{{ all_products["life-shirt"].title }}`,
+      imageMainSrc: `{{ all_products["life-shirt"].images.first | image_url }}`,
+      imageHoverSrc: `{{ all_products["life-shirt"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["lightning-jacket"].handle }}`,
+      title: `{{ all_products["lightning-jacket"].title }}`,
+      imageMainSrc: `{{ all_products["lightning-jacket"].images.first | image_url }}`,
+      imageHoverSrc: `{{ all_products["lightning-jacket"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["marathon-hoodie"].handle }}`,
+      title: `{{ all_products["marathon-hoodie"].title }}`,
+      imageMainSrc: `{{ all_products["marathon-hoodie"].images.first | image_url }}`,
+      imageHoverSrc: `{{ all_products["marathon-hoodie"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["marathon-pants"].handle }}`,
+      title: `{{ all_products["marathon-pants"].title }}`,
+      imageMainSrc: `{{ all_products["marathon-pants"].images.first | image_url }}`,
+      imageHoverSrc: `{{ all_products["marathon-pants"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["opinion-coat"].handle }}`,
+      title: `{{ all_products["opinion-coat"].title }}`,
+      imageMainSrc: `{{ all_products["opinion-coat"].images.first | image_url }}`,
+      imageHoverSrc: `{{ all_products["opinion-coat"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["pedestrian-sweater"].handle }}`,
+      title: `{{ all_products["pedestrian-sweater"].title }}`,
+      imageMainSrc: `{{ all_products["pedestrian-sweater"].images.first | image_url }}`,
+      imageHoverSrc: `{{ all_products["pedestrian-sweater"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["progress-shirt"].handle }}`,
+      title: `{{ all_products["progress-shirt"].title }}`,
+      imageMainSrc: `{{ all_products["progress-shirt"].images.first | image_url }}`,
+      imageHoverSrc: `{{ all_products["progress-shirt"].images.last | image_url }}`,
+    },
+  ]"
+>
+</category-product-category>
+
+{% schema %}
+{
+  "name": "Vue collection",
+  "class": "vue-section",
+  "presets": [
+    {
+      "name": "Vue collection"
+    }
+  ]
+}
+{% endschema %}

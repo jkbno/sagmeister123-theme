@@ -1,0 +1,350 @@
+<navigation-navigation-bar
+  :navigation-bar-data="{
+    isTransparent: false,
+    shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
+    currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
+    rootUrl: `{{ routes.root_url }}`,
+    cartUrl: `{{ routes.cart_url }}`,
+    collectionUrl: '/collections/all',
+    collectionName: 'Collection',
+    beautifulNumbersUrl: '/pages/beautiful-numbers',
+    beautifulNumbersName: 'Beautiful Numbers',
+    cartItemCount: `{{ cart.item_count }}`,
+    cartTotalPrice: `{{ cart.total_price }}`,
+  }"
+>
+</navigation-navigation-bar>
+{% if product.url == '/products/life-shirt' %}
+  <product-products-life-shirt
+    :life-shirt-data="{
+      backTop: `{{ 'product.backTop' | t }}`,
+      process: `{{ 'product.process' | t }}`,
+      productDescriptionData: {
+        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
+        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
+        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      },
+      productDetailsData: {
+        productItem: {
+          title: `{{ all_products["life-shirt"].title }}`,
+          price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
+          description: `{{ all_products["life-shirt"].description }}`,
+          imageSrcs: `{{ all_products["life-shirt"].images | json | replace: '"', "'" }}`,
+          variants: `{{ all_products["life-shirt"].variants | json | replace: '"', "'" }}`,
+        },
+        prevButton: `{{ 'product.prevButton' | t }}`,
+        nextButton: `{{ 'product.nextButton' | t }}`,
+        cut: `{{ 'product.cut' | t }}`,
+        sizeName: `{{ 'product.sizeName' | t }}`,
+        sizeGuide: `{{ 'product.sizeGuide' | t }}`,
+        addBag: `{{ 'product.addBag' | t }}`,
+      },
+      animationData: {
+        lifeShirtFirstSlideYear: `{{ 'product.lifeShirtFirstSlideYear' | t }}`,
+        lifeShirtFirstSlideText: `{{ 'product.lifeShirtFirstSlideText' | t }}`,
+        lifeShirtSecondSlideYear: `{{ 'product.lifeShirtSecondSlideYear' | t }}`,
+        lifeShirtSecondSlideText: `{{ 'product.lifeShirtSecondSlideText' | t }}`,
+      }
+    }"
+  >
+  </product-products-life-shirt>
+{% endif %}
+
+{% if product.url == '/products/lightning-jacket' %}
+  <product-products-lightning-jacket
+    :lightning-jacket-data="{
+      backTop: `{{ 'product.backTop' | t }}`,
+      process: `{{ 'product.process' | t }}`,
+      productDescriptionData: {
+        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
+        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
+        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      },
+      productDetailsData: {
+        productItem: {
+          title: `{{ all_products["lightning-jacket"].title }}`,
+          price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
+          description: `{{ all_products["lightning-jacket"].description }}`,
+          imageSrcs: `{{ all_products["lightning-jacket"].images | json | replace: '"', "'" }}`,
+          variants: `{{ all_products["lightning-jacket"].variants | json | replace: '"', "'" }}`,
+        },
+        prevButton: `{{ 'product.prevButton' | t }}`,
+        nextButton: `{{ 'product.nextButton' | t }}`,
+        cut: `{{ 'product.cut' | t }}`,
+        sizeName: `{{ 'product.sizeName' | t }}`,
+        sizeGuide: `{{ 'product.sizeGuide' | t }}`,
+        addBag: `{{ 'product.addBag' | t }}`,
+      },
+      animationData: {
+        lightningJacketFirstSlideYear: `{{ 'product.lightningJacketFirstSlideYear' | t }}`,
+        lightningJacketFirstSlideText: `{{ 'product.lightningJacketFirstSlideText' | t }}`,
+        lightningJacketSecondSlideYear: `{{ 'product.lightningJacketSecondSlideYear' | t }}`,
+        lightningJacketSecondSlideText: `{{ 'product.lightningJacketSecondSlideText' | t }}`,
+        lightningJacketThirdSlideYear: `{{ 'product.lightningJacketThirdSlideYear' | t }}`,
+        lightningJacketThirdSlideText: `{{ 'product.lightningJacketThirdSlideText' | t }}`,
+        lightningJacketFourthSlideYear: `{{ 'product.lightningJacketFourthSlideYear' | t }}`,
+        lightningJacketFourthSlideTextFirst: `{{ 'product.lightningJacketFourthSlideTextFirst' | t }}`,
+        lightningJacketFourthSlideTextSecond: `{{ 'product.lightningJacketFourthSlideTextSecond' | t }}`,
+      }
+    }"
+  >
+  </product-products-lightning-jacket>
+{% endif %}
+
+{% if product.url == '/products/marathon-hoodie' %}
+  <product-products-marathon-hoodie
+    :marathon-hoodie-data="{
+      backTop: `{{ 'product.backTop' | t }}`,
+      process: `{{ 'product.process' | t }}`,
+      productDescriptionData: {
+        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
+        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
+        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      },
+      productDetailsData: {
+        productItem: {
+          title: `{{ all_products["marathon-hoodie"].title }}`,
+          price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
+          description: `{{ all_products["marathon-hoodie"].description }}`,
+          imageSrcs: `{{ all_products["marathon-hoodie"].images | json | replace: '"', "'" }}`,
+          variants: `{{ all_products["marathon-hoodie"].variants | json | replace: '"', "'" }}`,
+        },
+        prevButton: `{{ 'product.prevButton' | t }}`,
+        nextButton: `{{ 'product.nextButton' | t }}`,
+        cut: `{{ 'product.cut' | t }}`,
+        sizeName: `{{ 'product.sizeName' | t }}`,
+        sizeGuide: `{{ 'product.sizeGuide' | t }}`,
+        addBag: `{{ 'product.addBag' | t }}`,
+      },
+      animationData: {
+        marathonHoodieFirstSlideYear: `{{ 'product.marathonHoodieFirstSlideYear' | t }}`,
+        marathonHoodieFirstSlideText: `{{ 'product.marathonHoodieFirstSlideText' | t }}`,
+        marathonHoodieSecondSlideYear: `{{ 'product.marathonHoodieSecondSlideYear' | t }}`,
+        marathonHoodieSecondSlideText: `{{ 'product.marathonHoodieSecondSlideText' | t }}`,
+        marathonHoodieThirdSlideYear: `{{ 'product.marathonHoodieThirdSlideYear' | t }}`,
+        marathonHoodieThirdSlideText: `{{ 'product.marathonHoodieThirdSlideText' | t }}`,
+      }
+    }"
+  >
+  </product-products-marathon-hoodie>
+{% endif %}
+
+{% if product.url == '/products/marathon-pants' %}
+  <product-products-marathon-pants
+    :marathon-pants-data="{
+      backTop: `{{ 'product.backTop' | t }}`,
+      process: `{{ 'product.process' | t }}`,
+      productDescriptionData: {
+        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
+        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
+        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      },
+      productDetailsData: {
+        productItem: {
+          title: `{{ all_products["marathon-pants"].title }}`,
+          price: `{{ all_products["marathon-pants"].price | money_without_trailing_zeros }}`,
+          description: `{{ all_products["marathon-pants"].description }}`,
+          imageSrcs: `{{ all_products["marathon-pants"].images | json | replace: '"', "'" }}`,
+          variants: `{{ all_products["marathon-pants"].variants | json | replace: '"', "'" }}`,
+        },
+        prevButton: `{{ 'product.prevButton' | t }}`,
+        nextButton: `{{ 'product.nextButton' | t }}`,
+        cut: `{{ 'product.cut' | t }}`,
+        sizeName: `{{ 'product.sizeName' | t }}`,
+        sizeGuide: `{{ 'product.sizeGuide' | t }}`,
+        addBag: `{{ 'product.addBag' | t }}`,
+      },
+      animationData: {
+        marathonHoodieFirstSlideYear: `{{ 'product.marathonHoodieFirstSlideYear' | t }}`,
+        marathonHoodieFirstSlideText: `{{ 'product.marathonHoodieFirstSlideText' | t }}`,
+        marathonHoodieSecondSlideYear: `{{ 'product.marathonHoodieSecondSlideYear' | t }}`,
+        marathonHoodieSecondSlideText: `{{ 'product.marathonHoodieSecondSlideText' | t }}`,
+        marathonHoodieThirdSlideYear: `{{ 'product.marathonHoodieThirdSlideYear' | t }}`,
+        marathonHoodieThirdSlideText: `{{ 'product.marathonHoodieThirdSlideText' | t }}`,
+      }
+    }"
+  >
+  </product-products-marathon-pants>
+{% endif %}
+
+{% if product.url == '/products/opinion-coat' %}
+  <product-products-opinion-coat
+    :opinion-coat-data="{
+      backTop: `{{ 'product.backTop' | t }}`,
+      process: `{{ 'product.process' | t }}`,
+      productDescriptionData: {
+        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
+        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
+        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      },
+      productDetailsData: {
+        productItem: {
+          title: `{{ all_products["opinion-coat"].title }}`,
+          price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
+          description: `{{ all_products["opinion-coat"].description }}`,
+          imageSrcs: `{{ all_products["opinion-coat"].images | json | replace: '"', "'" }}`,
+          variants: `{{ all_products["opinion-coat"].variants | json | replace: '"', "'" }}`,
+        },
+        prevButton: `{{ 'product.prevButton' | t }}`,
+        nextButton: `{{ 'product.nextButton' | t }}`,
+        cut: `{{ 'product.cut' | t }}`,
+        sizeName: `{{ 'product.sizeName' | t }}`,
+        sizeGuide: `{{ 'product.sizeGuide' | t }}`,
+        addBag: `{{ 'product.addBag' | t }}`,
+      },
+      animationData: {
+        opinionCoatFirstSlideYear: `{{ 'product.opinionCoatFirstSlideYear' | t }}`,
+        opinionCoatFirstSlideText: `{{ 'product.opinionCoatFirstSlideText' | t }}`,
+        opinionCoatSecondSlideYear: `{{ 'product.opinionCoatSecondSlideYear' | t }}`,
+        opinionCoatSecondSlideText: `{{ 'product.opinionCoatSecondSlideText' | t }}`,
+        opinionCoatThirdSlideYear: `{{ 'product.opinionCoatThirdSlideYear' | t }}`,
+        opinionCoatThirdSlideText: `{{ 'product.opinionCoatThirdSlideText' | t }}`,
+      }
+    }"
+  >
+  </product-products-opinion-coat>
+{% endif %}
+
+{% if product.url == '/products/pedestrian-sweater' %}
+  <product-products-pedestrian-sweater
+    :pedestrian-sweater-data="{
+      backTop: `{{ 'product.backTop' | t }}`,
+      process: `{{ 'product.process' | t }}`,
+      productDescriptionData: {
+        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
+        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
+        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      },
+      productDetailsData: {
+        productItem: {
+          title: `{{ all_products["pedestrian-sweater"].title }}`,
+          price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
+          description: `{{ all_products["pedestrian-sweater"].description }}`,
+          imageSrcs: `{{ all_products["pedestrian-sweater"].images | json | replace: '"', "'" }}`,
+          variants: `{{ all_products["pedestrian-sweater"].variants | json | replace: '"', "'" }}`,
+        },
+        prevButton: `{{ 'product.prevButton' | t }}`,
+        nextButton: `{{ 'product.nextButton' | t }}`,
+        cut: `{{ 'product.cut' | t }}`,
+        sizeName: `{{ 'product.sizeName' | t }}`,
+        sizeGuide: `{{ 'product.sizeGuide' | t }}`,
+        addBag: `{{ 'product.addBag' | t }}`,
+      },
+      animationData: {
+        pedestrianSweaterFirstSlideYear: `{{ 'product.pedestrianSweaterFirstSlideYear' | t }}`,
+        pedestrianSweaterFirstSlideText: `{{ 'product.pedestrianSweaterFirstSlideText' | t }}`,
+        pedestrianSweaterSecondSlideYear: `{{ 'product.pedestrianSweaterSecondSlideYear' | t }}`,
+        pedestrianSweaterSecondSlideText: `{{ 'product.pedestrianSweaterSecondSlideText' | t }}`,
+      }
+    }"
+  >
+  </product-products-pedestrian-sweater>
+{% endif %}
+
+{% if product.url == '/products/progress-shirt' %}
+  <product-products-progress-shirt
+    :progress-shirt-data="{
+      backTop: `{{ 'product.backTop' | t }}`,
+      process: `{{ 'product.process' | t }}`,
+      productDescriptionData: {
+        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
+        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
+        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      },
+      productDetailsData: {
+        productItem: {
+          title: `{{ all_products["progress-shirt"].title }}`,
+          price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
+          description: `{{ all_products["progress-shirt"].description }}`,
+          imageSrcs: `{{ all_products["progress-shirt"].images | json | replace: '"', "'" }}`,
+          variants: `{{ all_products["progress-shirt"].variants | json | replace: '"', "'" }}`,
+        },
+        prevButton: `{{ 'product.prevButton' | t }}`,
+        nextButton: `{{ 'product.nextButton' | t }}`,
+        cut: `{{ 'product.cut' | t }}`,
+        sizeName: `{{ 'product.sizeName' | t }}`,
+        sizeGuide: `{{ 'product.sizeGuide' | t }}`,
+        addBag: `{{ 'product.addBag' | t }}`,
+      },
+      animationData: {
+        progressShirtFirstSlideYear: `{{ 'product.progressShirtFirstSlideYear' | t }}`,
+        progressShirtFirstSlideText: `{{ 'product.progressShirtFirstSlideText' | t }}`,
+        progressShirtSecondSlideYear: `{{ 'product.progressShirtSecondSlideYear' | t }}`,
+        progressShirtSecondSlideText: `{{ 'product.progressShirtSecondSlideText' | t }}`,
+      }
+    }"
+  >
+  </product-products-progress-shirt>
+{% endif %}
+
+<global-sections-global-good-news
+  :good-news-data="{
+    goodNews: `{{ 'home.goodNews' | t }}`,
+    products: {
+      lifeShirt: {
+        title: `{{ all_products["life-shirt"].title }}`,
+        price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+      },
+      lightningJacket: {
+        title: `{{ all_products["lightning-jacket"].title }}`,
+        price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+      },
+      marathonHoodie: {
+        title: `{{ all_products["marathon-hoodie"].title }}`,
+        price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+      },
+      opinionCoat: {
+        title: `{{ all_products["opinion-coat"].title }}`,
+        price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+      },
+      pedestrianSweater: {
+        title: `{{ all_products["pedestrian-sweater"].title }}`,
+        price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+      },
+      progressShirt: {
+        title: `{{ all_products["progress-shirt"].title }}`,
+        price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
+        imgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+      },
+    },
+  }"
+>
+</global-sections-global-good-news>
+
+{% schema %}
+{
+  "name": "Main product",
+  "class": "vue-section",
+  "presets": [
+    {
+      "name": "Main product"
+    }
+  ]
+}
+{% endschema %}
