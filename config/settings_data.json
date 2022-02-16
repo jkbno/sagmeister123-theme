@@ -1,20 +1,2 @@
 {
-  "current": {
-    "checkout_accent_color": "#49aff4",
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "settings": {
-        }
-      }
-    },
-    "content_for_index": [
-
-    ]
-  }
 }
