@@ -1,12 +1,21 @@
 {
   "current": {
+    "favicon": "shopify:\/\/shop_images\/sagmeister123-logo.png",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
         }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
