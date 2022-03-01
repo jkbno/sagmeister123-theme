@@ -17,6 +17,91 @@
       {
         "type": "paragraph",
         "content": "t:settings_schema.custom_settings.settings.paragraph"
+      },
+      {
+        "id": "collectionName",
+        "type": "text",
+        "default": "Collection"
+      },
+      {
+        "id": "collectionUrl",
+        "type": "text",
+        "default": "\/collections\/all"
+      },
+      {
+        "id": "beautifulNumbersUrl",
+        "type": "text",
+        "default": "\/pages\/beautiful-numbers"
+      },
+      {
+        "id": "beautifulNumbersName",
+        "type": "text",
+        "default": "Beautiful Numbers"
+      },
+      {
+        "id": "cartName",
+        "type": "text",
+        "default": "Shopping Bag"
+      },
+      {
+        "id": "productsLifeShirtUrl",
+        "type": "text",
+        "default": "\/products\/life-shirt"
+      },
+      {
+        "id": "productsLightningJacketUrl",
+        "type": "text",
+        "default": "\/products\/lightning-jacket"
+      },
+      {
+        "id": "productsMarathonHoodieUrl",
+        "type": "text",
+        "default": "\/products\/marathon-hoodie"
+      },
+      {
+        "id": "productsMarathonPantsUrl",
+        "type": "text",
+        "default": "\/products\/marathon-pants"
+      },
+      {
+        "id": "productsOpinionCoatUrl",
+        "type": "text",
+        "default": "\/products\/opinion-coat"
+      },
+      {
+        "id": "productsPedestrianSweaterUrl",
+        "type": "text",
+        "default": "\/products\/pedestrian-sweater"
+      },
+      {
+        "id": "productsProgressShirtUrl",
+        "type": "text",
+        "default": "\/products\/progress-shirt"
+      },
+      {
+        "id": "deliveryUrl",
+        "type": "text",
+        "default": "\/pages\/delivery-and-returns"
+      },
+      {
+        "id": "termsUrl",
+        "type": "text",
+        "default": "\/pages\/terms-and-conditions"
+      },
+      {
+        "id": "retailersUrl",
+        "type": "text",
+        "default": "\/pages\/retailers"
+      },
+      {
+        "id": "contactUrl",
+        "type": "text",
+        "default": "\/pages\/contact-us"
+      },
+      {
+        "id": "aboutUrl",
+        "type": "text",
+        "default": "\/pages\/about"
       }
     ]
   },

@@ -1,0 +1,36 @@
+<navigation-navigation-bar
+    :navigation-bar-data="{
+      isTransparentNav: `{{ isTransparentNav }}`,
+      shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
+      currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
+      rootUrl: `{{ routes.root_url }}`,
+      cartUrl: `{{ routes.cart_url }}`,
+      cartName: `{{ settings.cartName }}`,
+      collectionUrl: `{{ settings.collectionUrl }}`,
+      collectionName: `{{ settings.collectionName }}`,
+      beautifulNumbersUrl: `{{ settings.beautifulNumbersUrl }}`,
+      beautifulNumbersName: `{{ settings.beautifulNumbersName }}`,
+      cartItemCount: `{{ cart.item_count }}`,
+      cartTotalPrice: `{{ cart.total_price }}`,
+      shoppingBagMiniData: {
+        cartItems: `{{ cart.items | json | replace: '"', "'" }}`,
+        cartTotalPrice: `{{ cart.total_price }}`,
+        currency: `{{ 'shoppingBag.currency' | t }}`,
+        leftSideTitle: `{{ 'shoppingBag.leftSideTitle' | t }}`,
+        leftSideTableProduct: `{{ 'shoppingBag.leftSideTableProduct' | t }}`,
+        leftSideTablePrice: `{{ 'shoppingBag.leftSideTablePrice' | t }}`,
+        leftSideTableQuantity: `{{ 'shoppingBag.leftSideTableQuantity' | t }}`,
+        leftSideTableSybtotal: `{{ 'shoppingBag.leftSideTableSybtotal' | t }}`,
+        rightSideTitle: `{{ 'shoppingBagMini.rightSideTitle' | t }}`,
+        emptyShoppingBag: `{{ 'shoppingBagMini.emptyShoppingBag' | t }}`,
+        rightSideSize: `{{ 'shoppingBag.rightSideSize' | t }}`,
+        rightSideQuantity: `{{ 'shoppingBag.rightSideQuantity' | t }}`,
+        rightSideSubtotal: `{{ 'shoppingBag.rightSideSubtotal' | t }}`,
+        rightSideShipping: `{{ 'shoppingBag.rightSideShipping' | t }}`,
+        rightSideShippingCost: `{{ 'shoppingBag.rightSideShippingCost' | t }}`,
+        rightSideTotal: `{{ 'shoppingBag.rightSideTotal' | t }}`,
+        rightSideCheckout: `{{ 'shoppingBag.rightSideCheckout' | t }}`,
+      },
+    }"
+  >
+</navigation-navigation-bar>

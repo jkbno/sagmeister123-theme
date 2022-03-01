@@ -1,27 +1,38 @@
 {
   "current": {
-    "favicon": "shopify:\/\/shop_images\/sagmeister123-logo.png",
     "sections": {
       "header": {
         "type": "header",
         "settings": {
         }
       },
-      "footer": {
-        "type": "footer",
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
         "settings": {
         }
       }
-    },
-    "content_for_index": [
-
-    ]
+    }
   },
   "presets": {
     "Default": {
       "sections": {
         "header": {
           "type": "header",
+          "settings": {
+          }
+        },
+        "main-password-header": {
+          "type": "main-password-header",
+          "settings": {
+          }
+        },
+        "main-password-footer": {
+          "type": "main-password-footer",
           "settings": {
           }
         }
