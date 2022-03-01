@@ -1,2 +1,375 @@
-<h1>{{ page.title }}</h1>
-<div>{{ page.content }}</div>
+{% assign isTransparentNav = 'false' %}
+{% assign goodNewsIsBlue = 'true' %}
+{% assign goodNewsIsNotBlue = 'false' %}
+{% assign showButton = 'false' %}
+{% assign textImageBlockBlue = 'text-image-block_blue' %}
+{% assign col6Lg = 'col-6-lg' %}
+{% assign col3Lg = 'col-3-lg' %}
+{% assign textImageBlockYellow = 'text-image-block_yellow' %}
+{% assign ifTextRight = 'true' %}
+{% assign ifNotTextRight = 'false' %}
+
+
+{% assign infoBeautifulNumbersDataImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/beautiful-numbers-painting.jpg?v=1645552324' %}
+{% assign infoGalleryDataImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/beautiful-numbers-gallery.jpg?v=1645552324' %}
+
+{% assign retailersFirstImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/sagmeister-store.jpg?v=1645552511' %}
+{% assign retailersSecondImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/Sagmeister-Women.jpg?v=1645552511' %}
+{% assign retailersThirdImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/mak-store.jpg?v=1645552511' %}
+{% assign retailersFourthImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/Rag.jpg?v=1645552511' %}
+
+{% assign aboutFirstImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/koala-fabric.jpg?v=1645547036' %}
+{% assign aboutSecondImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/labels-signing.jpg?v=1645547036' %}
+{% assign aboutThirdImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/koala-sketch.jpg?v=1645547036' %}
+{% assign aboutFourthImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/123-all.jpg?v=1645547036' %}
+
+{% render 'navigation-bar', isTransparentNav: isTransparentNav %}
+{% if canonical_url contains settings.beautifulNumbersUrl %}
+  <page-pages-beautiful-numbers-page
+    :beautiful-numbers-data="{
+      title: `{{ 'beautifulNumbers.title' | t }}`,
+      goodNews: `{{ 'home.goodNews' | t }}`,
+      goodNewsIsBlue: `{{ goodNewsIsNotBlue }}`,
+      textImageBlockData: [
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockYellow }}`,
+          textImageBlockColLeftClass: `{{ col3Lg }}`,
+          textImageBlockColRightClass: `{{ col6Lg }}`,
+          ifTextRight: `{{ ifTextRight }}`,
+          imageUrl: `{{ infoBeautifulNumbersDataImageUrl }}`,
+          firstSectionFirstText: `{{ 'beautifulNumbers.infoBeautifulNumbers' | t }}`,
+        },
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockBlue }}`,
+          textImageBlockColLeftClass: `{{ col6Lg }}`,
+          textImageBlockColRightClass: `{{ col3Lg }}`,
+          ifTextRight: `{{ ifNotTextRight }}`,
+          imageUrl: `{{ infoGalleryDataImageUrl }}`,
+          secondSectionFirstText: `{{ 'beautifulNumbers.infoGallery' | t }}`,
+        },
+      ],
+      products: {
+        lifeShirt: {
+          title: `{{ all_products["life-shirt"].title }}`,
+          price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+        },
+        lightningJacket: {
+          title: `{{ all_products["lightning-jacket"].title }}`,
+          price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+        },
+        marathonHoodie: {
+          title: `{{ all_products["marathon-hoodie"].title }}`,
+          price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+        },
+        opinionCoat: {
+          title: `{{ all_products["opinion-coat"].title }}`,
+          price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+        },
+        pedestrianSweater: {
+          title: `{{ all_products["pedestrian-sweater"].title }}`,
+          price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+        },
+        progressShirt: {
+          title: `{{ all_products["progress-shirt"].title }}`,
+          price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+        },
+      },
+    }"
+  >
+  </page-pages-beautiful-numbers-page>
+{% endif %}
+{% if canonical_url contains settings.termsUrl %}
+  <page-pages-terms-page
+    :terms-data="{
+      title: `{{ 'termsConditions.title' | t }}`,
+      introFirstParagraph: `{{ 'termsConditions.introFirstParagraph' | t }}`,
+      introSecondParagraph: `{{ 'termsConditions.introSecondParagraph' | t }}`,
+      introThirdParagraph: `{{ 'termsConditions.introThirdParagraph' | t }}`,
+      introFourthParagraph: `{{ 'termsConditions.introFourthParagraph' | t }}`,
+      introFifthParagraph: `{{ 'termsConditions.introFifthParagraph' | t }}`,
+      sectionOneTitle: `{{ 'termsConditions.sectionOneTitle' | t }}`,
+      sectionOneFirstParagraph: `{{ 'termsConditions.sectionOneFirstParagraph' | t }}`,
+      sectionOneSecondParagraph: `{{ 'termsConditions.sectionOneSecondParagraph' | t }}`,
+      sectionOneThirdParagraph: `{{ 'termsConditions.sectionOneThirdParagraph' | t }}`,
+      sectionOneFourthParagraph: `{{ 'termsConditions.sectionOneFourthParagraph' | t }}`,
+      sectionTwoTitle: `{{ 'termsConditions.sectionTwoTitle' | t }}`,
+      sectionTwoFirstParagraph: `{{ 'termsConditions.sectionTwoFirstParagraph' | t }}`,
+      sectionTwoSecondParagraph: `{{ 'termsConditions.sectionTwoSecondParagraph' | t }}`,
+      sectionTwoThirdParagraph: `{{ 'termsConditions.sectionTwoThirdParagraph' | t }}`,
+      sectionTwoFourthParagraph: `{{ 'termsConditions.sectionTwoFourthParagraph' | t }}`,
+      sectionThreeTitle: `{{ 'termsConditions.sectionThreeTitle' | t }}`,
+      sectionThreeFirstParagraph: `{{ 'termsConditions.sectionThreeFirstParagraph' | t }}`,
+      sectionThreeSecondParagraph: `{{ 'termsConditions.sectionThreeSecondParagraph' | t }}`,
+      sectionFourTitle: `{{ 'termsConditions.sectionFourTitle' | t }}`,
+      sectionFourFirstParagraph: `{{ 'termsConditions.sectionFourFirstParagraph' | t }}`,
+      sectionFourSecondParagraph: `{{ 'termsConditions.sectionFourSecondParagraph' | t }}`,
+      sectionFourThirdParagraph: `{{ 'termsConditions.sectionFourThirdParagraph' | t }}`,
+      sectionFiveTitle: `{{ 'termsConditions.sectionFiveTitle' | t }}`,
+      sectionFiveFirstParagraph: `{{ 'termsConditions.sectionFiveFirstParagraph' | t }}`,
+      sectionFiveSecondParagraph: `{{ 'termsConditions.sectionFiveSecondParagraph' | t }}`,
+      sectionFiveThirdParagraph: `{{ 'termsConditions.sectionFiveThirdParagraph' | t }}`,
+      sectionFiveFourthParagraph: `{{ 'termsConditions.sectionFiveFourthParagraph' | t }}`,
+      sectionSixTitle: `{{ 'termsConditions.sectionSixTitle' | t }}`,
+      sectionSixFirstParagraph: `{{ 'termsConditions.sectionSixFirstParagraph' | t }}`,
+      sectionSixSecondParagraph: `{{ 'termsConditions.sectionSixSecondParagraph' | t }}`,
+      sectionSixThirdParagraph: `{{ 'termsConditions.sectionSixThirdParagraph' | t }}`,
+      sectionSevenTitle: `{{ 'termsConditions.sectionSevenTitle' | t }}`,
+      sectionSevenFirstParagraph: `{{ 'termsConditions.sectionSevenFirstParagraph' | t }}`,
+      sectionSevenSecondParagraph: `{{ 'termsConditions.sectionSevenSecondParagraph' | t }}`,
+      sectionSevenThirdParagraph: `{{ 'termsConditions.sectionSevenThirdParagraph' | t }}`,
+      sectionSevenFourthParagraph: `{{ 'termsConditions.sectionSevenFourthParagraph' | t }}`,
+      sectionEightTitle: `{{ 'termsConditions.sectionEightTitle' | t }}`,
+      sectionEightFirstParagraph: `{{ 'termsConditions.sectionEightFirstParagraph' | t }}`,
+      sectionEightSecondParagraph: `{{ 'termsConditions.sectionEightSecondParagraph' | t }}`,
+      sectionEightThirdParagraph: `{{ 'termsConditions.sectionEightThirdParagraph' | t }}`,
+      sectionNineTitle: `{{ 'termsConditions.sectionNineTitle' | t }}`,
+      sectionNineFirstParagraph: `{{ 'termsConditions.sectionNineFirstParagraph' | t }}`,
+      sectionNineSecondParagraph: `{{ 'termsConditions.sectionNineSecondParagraph' | t }}`,
+      sectionNineThirdParagraph: `{{ 'termsConditions.sectionNineThirdParagraph' | t }}`,
+      sectionTenTitle: `{{ 'termsConditions.sectionTenTitle' | t }}`,
+      sectionTenFirstParagraph: `{{ 'termsConditions.sectionTenFirstParagraph' | t }}`,
+      sectionElevenTitle: `{{ 'termsConditions.sectionElevenTitle' | t }}`,
+      sectionElevenFirstParagraph: `{{ 'termsConditions.sectionElevenFirstParagraph' | t }}`,
+      sectionElevenSecondParagraph: `{{ 'termsConditions.sectionElevenSecondParagraph' | t }}`,
+      sectionTwelveTitle: `{{ 'termsConditions.sectionTwelveTitle' | t }}`,
+      sectionTwelveFirstParagraph: `{{ 'termsConditions.sectionTwelveFirstParagraph' | t }}`,
+      sectionTwelveSecondParagraph: `{{ 'termsConditions.sectionTwelveSecondParagraph' | t }}`,
+      sectionTwelveThirdParagraph: `{{ 'termsConditions.sectionTwelveThirdParagraph' | t }}`,
+      sectionThirteenTitle: `{{ 'termsConditions.sectionThirteenTitle' | t }}`,
+      sectionThirteenFirstParagraph: `{{ 'termsConditions.sectionThirteenFirstParagraph' | t }}`,
+      sectionThirteenSecondParagraph: `{{ 'termsConditions.sectionThirteenSecondParagraph' | t }}`,
+      sectionThirteenThirdParagraph: `{{ 'termsConditions.sectionThirteenThirdParagraph' | t }}`,
+      sectionThirteenFourthParagraph: `{{ 'termsConditions.sectionThirteenFourthParagraph' | t }}`,
+      sectionThirteenFifthParagraph: `{{ 'termsConditions.sectionThirteenFifthParagraph' | t }}`,
+      sectionThirteenSixthParagraph: `{{ 'termsConditions.sectionThirteenSixthParagraph' | t }}`,
+      sectionFoutteenTitle: `{{ 'termsConditions.sectionFoutteenTitle' | t }}`,
+      sectionFoutteenFirstParagraph: `{{ 'termsConditions.sectionFoutteenFirstParagraph' | t }}`,
+      sectionFifteenTitle: `{{ 'termsConditions.sectionFifteenTitle' | t }}`,
+      sectionFifteenFirstParagraph: `{{ 'termsConditions.sectionFifteenFirstParagraph' | t }}`,
+      sectionSixteenTitle: `{{ 'termsConditions.sectionSixteenTitle' | t }}`,
+      sectionSixteenFirstParagraph: `{{ 'termsConditions.sectionSixteenFirstParagraph' | t }}`,
+      sectionSixteenSecondParagraph: `{{ 'termsConditions.sectionSixteenSecondParagraph' | t }}`,
+      sectionSixteenThirdParagraph: `{{ 'termsConditions.sectionSixteenThirdParagraph' | t }}`,
+      sectionSeventeenTitle: `{{ 'termsConditions.sectionSeventeenTitle' | t }}`,
+      sectionSeventeenFirstParagraph: `{{ 'termsConditions.sectionSeventeenFirstParagraph' | t }}`,
+      sectionSeventeenSecondParagraph: `{{ 'termsConditions.sectionSeventeenSecondParagraph' | t }}`,
+      sectionSeventeenThirdParagraph: `{{ 'termsConditions.sectionSeventeenThirdParagraph' | t }}`,
+      sectionEighteenTitle: `{{ 'termsConditions.sectionEighteenTitle' | t }}`,
+      sectionEighteenFirstParagraph: `{{ 'termsConditions.sectionEighteenFirstParagraph' | t }}`,
+      sectionNineteenTitle: `{{ 'termsConditions.sectionNineteenTitle' | t }}`,
+      sectionNineteenFirstParagraph: `{{ 'termsConditions.sectionNineteenFirstParagraph' | t }}`,
+      sectionNineteenSecondParagraph: `{{ 'termsConditions.sectionNineteenSecondParagraph' | t }}`,
+      sectionTwentiethteenTitle: `{{ 'termsConditions.sectionTwentiethteenTitle' | t }}`,
+      sectionTwentiethteenFirstParagraph: `{{ 'termsConditions.sectionTwentiethteenFirstParagraph' | t }}`,
+    }"
+  >
+  </page-pages-terms-page>
+{% endif %}
+{% if canonical_url contains settings.deliveryUrl %}
+  <page-pages-delivery-page
+    :delivery-data="{
+      title: `{{ 'delivery.title' | t }}`,
+      deliverySectionTitle: `{{ 'delivery.deliverySectionTitle' | t }}`,
+      deliverySectionFirstParagraph: `{{ 'delivery.deliverySectionFirstParagraph' | t }}`,
+      deliverySectionSecondParagraph: `{{ 'delivery.deliverySectionSecondParagraph' | t }}`,
+      deliverySectionThirdParagraph: `{{ 'delivery.deliverySectionThirdParagraph' | t }}`,
+      deliveryUsSectionTitle: `{{ 'delivery.deliveryUsSectionTitle' | t }}`,
+      deliveryUsSectionFirstParagraph: `{{ 'delivery.deliveryUsSectionFirstParagraph' | t }}`,
+      deliveryUsSectionSecondParagraph: `{{ 'delivery.deliveryUsSectionSecondParagraph' | t }}`,
+      deliveryUsSectionThirdParagraph: `{{ 'delivery.deliveryUsSectionThirdParagraph' | t }}`,
+      internationalDeliverySectionTitle: `{{ 'delivery.internationalDeliverySectionTitle' | t }}`,
+      internationalDeliverySectionFirstParagraph: `{{ 'delivery.internationalDeliverySectionFirstParagraph' | t }}`,
+      returnsSectionTitle: `{{ 'delivery.returnsSectionTitle' | t }}`,
+      returnsSectionFirstParagraphPartOne: `{{ 'delivery.returnsSectionFirstParagraphPartOne' | t }}`,
+      returnsSectionFirstParagraphPartTwo: `{{ 'delivery.returnsSectionFirstParagraphPartTwo' | t }}`,
+    }"
+  >
+  </page-pages-delivery-page>
+{% endif %}
+{% if canonical_url contains settings.contactUrl %}
+  <page-pages-contact-page
+    :contact-data="{
+      title: `{{ 'contact.title' | t }}`,
+      customerServiceUpper: `{{ 'contact.customerServiceUpper' | t }}`,
+      customerServiceLower: `{{ 'contact.customerServiceLower' | t }}`,
+      sellingProductsUpper: `{{ 'contact.sellingProductsUpper' | t }}`,
+      sellingProductsLower: `{{ 'contact.sellingProductsLower' | t }}`,
+      pressPrUpper: `{{ 'contact.PressPrUpper' | t }}`,
+      pressPrLower: `{{ 'contact.PressPrLower' | t }}`,
+    }"
+  >
+  </page-pages-contact-page>
+{% endif %}
+{% if canonical_url contains settings.aboutUrl %}
+  <page-pages-about-page
+    :about-data="{
+      title: `{{ 'about.title' | t }}`,
+      textImageBlockData: [
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockBlue }}`,
+          textImageBlockColLeftClass: `{{ col3Lg }}`,
+          textImageBlockColRightClass: `{{ col6Lg }}`,
+          ifTextRight: `{{ ifTextRight }}`,
+          imageUrl: `{{ aboutFirstImageUrl }}`,
+          firstSectionFirstText: `{{ 'about.firstSectionFirstText' | t }}`,
+          firstSectionSecondText: `{{ 'about.firstSectionSecondText' | t }}`,
+          firstSectionThirdText: `{{ 'about.firstSectionThirdText' | t }}`,
+          firstSectionFourthText: `{{ 'about.firstSectionFourthText' | t }}`,
+          firstSectionFifthText: `{{ 'about.firstSectionFifthText' | t }}`,
+        },
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockYellow }}`,
+          textImageBlockColLeftClass: `{{ col6Lg }}`,
+          textImageBlockColRightClass: `{{ col3Lg }}`,
+          ifTextRight: `{{ ifNotTextRight }}`,
+          imageUrl: `{{ aboutSecondImageUrl }}`,
+          secondSectionFirstText: `{{ 'about.secondSectionFirstText' | t }}`,
+          secondSectionSecondText: `{{ 'about.secondSectionSecondText' | t }}`,
+          secondSectionThirdText: `{{ 'about.secondSectionThirdText' | t }}`,
+          secondSectionFourthText: `{{ 'about.secondSectionFourthText' | t }}`,
+        },
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockYellow }}`,
+          textImageBlockColLeftClass: `{{ col3Lg }}`,
+          textImageBlockColRightClass: `{{ col6Lg }}`,
+          ifTextRight: `{{ ifTextRight }}`,
+          imageUrl: `{{ aboutThirdImageUrl }}`,
+          thirdSectionFirstText: `{{ 'about.thirdSectionFirstText' | t }}`,
+          thirdSectionSecondText: `{{ 'about.thirdSectionSecondText' | t }}`,
+          thirdSectionThirdText: `{{ 'about.thirdSectionThirdText' | t }}`,
+          thirdSectionFourthText: `{{ 'about.thirdSectionFourthText' | t }}`,
+        },
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockBlue }}`,
+          textImageBlockColLeftClass: `{{ col6Lg }}`,
+          textImageBlockColRightClass: `{{ col3Lg }}`,
+          ifTextRight: `{{ ifNotTextRight }}`,
+          imageUrl: `{{ aboutFourthImageUrl }}`,
+          fourthSectionFirstText: `{{ 'about.fourthSectionFirstText' | t }}`,
+          fourthSectionSecondText: `{{ 'about.fourthSectionSecondText' | t }}`,
+        },
+      ],
+    }"
+  >
+  </page-pages-about-page>
+{% endif %}
+{% if canonical_url contains settings.retailersUrl %}
+  <page-pages-retailers-page
+    :retailers-data="{
+      title: `{{ 'retailers.title' | t }}`,
+      goodNewsIsBlue: `{{ goodNewsIsBlue }}`,
+      goodNewsText: `{{ 'retailers.goodNewsText' | t }}`,
+      textImageBlockData: [
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockBlue }}`,
+          textImageBlockColLeftClass: `{{ col3Lg }}`,
+          textImageBlockColRightClass: `{{ col6Lg }}`,
+          ifTextRight: `{{ ifTextRight }}`,
+          imageUrl: `{{ retailersFirstImageUrl }}`,
+          firstSectionFirstText: `{{ 'retailers.firstSectionFirstText' | t }}`,
+          firstSectionSecondText: `{{ 'retailers.firstSectionSecondText' | t }}`,
+          firstSectionThirdText: `{{ 'retailers.firstSectionThirdText' | t }}`,
+          firstSectionFourthText: `{{ 'retailers.firstSectionFourthText' | t }}`,
+          firstSectionFifthText: `{{ 'retailers.firstSectionFifthText' | t }}`,
+        },
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockYellow }}`,
+          textImageBlockColLeftClass: `{{ col6Lg }}`,
+          textImageBlockColRightClass: `{{ col3Lg }}`,
+          ifTextRight: `{{ ifNotTextRight }}`,
+          imageUrl: `{{ retailersSecondImageUrl }}`,
+          secondSectionFirstText: `{{ 'retailers.secondSectionFirstText' | t }}`,
+          secondSectionSecondText: `{{ 'retailers.secondSectionSecondText' | t }}`,
+          secondSectionThirdText: `{{ 'retailers.secondSectionThirdText' | t }}`,
+          secondSectionFourthText: `{{ 'retailers.secondSectionFourthText' | t }}`,
+          secondSectionFifthText: `{{ 'retailers.secondSectionFifthText' | t }}`,
+          secondSectionSixthText: `{{ 'retailers.secondSectionSixthText' | t }}`,
+        },
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockBlue }}`,
+          textImageBlockColLeftClass: `{{ col3Lg }}`,
+          textImageBlockColRightClass: `{{ col6Lg }}`,
+          ifTextRight: `{{ ifTextRight }}`,
+          imageUrl: `{{ retailersThirdImageUrl }}`,
+          thirdSectionFirstText: `{{ 'retailers.thirdSectionFirstText' | t }}`,
+          thirdSectionSecondText: `{{ 'retailers.thirdSectionSecondText' | t }}`,
+          thirdSectionThirdText: `{{ 'retailers.thirdSectionThirdText' | t }}`,
+          thirdSectionFourthText: `{{ 'retailers.thirdSectionFourthText' | t }}`,
+        },
+        {
+          showButton: `{{ showButton }}`,
+          textImageBlockClass: `{{ textImageBlockYellow }}`,
+          textImageBlockColLeftClass: `{{ col6Lg }}`,
+          textImageBlockColRightClass: `{{ col3Lg }}`,
+          ifTextRight: `{{ ifNotTextRight }}`,
+          imageUrl: `{{ retailersFourthImageUrl }}`,
+          fourthSectionFirstText: `{{ 'retailers.fourthSectionFirstText' | t }}`,
+          fourthSectionSecondText: `{{ 'retailers.fourthSectionSecondText' | t }}`,
+          fourthSectionThirdText: `{{ 'retailers.fourthSectionThirdText' | t }}`,
+          fourthSectionFourthText: `{{ 'retailers.fourthSectionFourthText' | t }}`,
+        },
+      ],
+      products: {
+        lifeShirt: {
+          title: `{{ all_products["life-shirt"].title }}`,
+          price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+        },
+        lightningJacket: {
+          title: `{{ all_products["lightning-jacket"].title }}`,
+          price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+        },
+        marathonHoodie: {
+          title: `{{ all_products["marathon-hoodie"].title }}`,
+          price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+        },
+        opinionCoat: {
+          title: `{{ all_products["opinion-coat"].title }}`,
+          price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+        },
+        pedestrianSweater: {
+          title: `{{ all_products["pedestrian-sweater"].title }}`,
+          price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+        },
+        progressShirt: {
+          title: `{{ all_products["progress-shirt"].title }}`,
+          price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
+          imgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+        },
+      },
+    }"
+  >
+  </page-pages-retailers-page>
+{% endif %}
+{% render 'footer' %}
+
+{% schema %}
+{
+  "name": "Vue page",
+  "class": "vue-section",
+  "presets": [
+    {
+      "name": "Vue page"
+    }
+  ]
+}
+{% endschema %}
