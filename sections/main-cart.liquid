@@ -1,19 +1,6 @@
-<navigation-navigation-bar
-  :navigation-bar-data="{
-    isTransparent: false,
-    shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
-    currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
-    rootUrl: `{{ routes.root_url }}`,
-    cartUrl: `{{ routes.cart_url }}`,
-    collectionUrl: '/collections/all',
-    collectionName: 'Collection',
-    beautifulNumbersUrl: '/pages/beautiful-numbers',
-    beautifulNumbersName: 'Beautiful Numbers',
-    cartItemCount: `{{ cart.item_count }}`,
-    cartTotalPrice: `{{ cart.total_price }}`,
-  }"
->
-</navigation-navigation-bar>
+{% assign isTransparentNav = 'false' %}
+
+{% render 'navigation-bar', isTransparentNav: isTransparentNav %}
 <cart-shopping-bag
   :shopping-bag-data="{
     cartItems: `{{ cart.items | json | replace: '"', "'" }}`,
@@ -25,12 +12,14 @@
     leftSideTableQuantity: `{{ 'shoppingBag.leftSideTableQuantity' | t }}`,
     leftSideTableSybtotal: `{{ 'shoppingBag.leftSideTableSybtotal' | t }}`,
     rightSideTitle: `{{ 'shoppingBag.rightSideTitle' | t }}`,
+    rightSideSize: `{{ 'shoppingBag.rightSideSize' | t }}`,
     rightSideQuantity: `{{ 'shoppingBag.rightSideQuantity' | t }}`,
     rightSideSubtotal: `{{ 'shoppingBag.rightSideSubtotal' | t }}`,
     rightSideShipping: `{{ 'shoppingBag.rightSideShipping' | t }}`,
     rightSideShippingCost: `{{ 'shoppingBag.rightSideShippingCost' | t }}`,
     rightSideTotal: `{{ 'shoppingBag.rightSideTotal' | t }}`,
     rightSideCheckout: `{{ 'shoppingBag.rightSideCheckout' | t }}`,
+    delivery: `{{ 'shoppingBag.delivery' | t }}`,
   }"
 >
 </cart-shopping-bag>

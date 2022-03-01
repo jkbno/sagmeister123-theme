@@ -1,19 +1,9 @@
-<navigation-navigation-bar
-  :navigation-bar-data="{
-    isTransparent: true,
-    shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
-    currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
-    rootUrl: `{{ routes.root_url }}`,
-    cartUrl: `{{ routes.cart_url }}`,
-    collectionUrl: '/collections/all',
-    collectionName: 'Collection',
-    beautifulNumbersUrl: '/pages/beautiful-numbers',
-    beautifulNumbersName: 'Beautiful Numbers',
-    cartItemCount: `{{ cart.item_count }}`,
-    cartTotalPrice: `{{ cart.total_price }}`,
-  }"
->
-</navigation-navigation-bar>
+{% assign isTransparentNav = 'true' %}
+
+{% assign infoBeautifulNumbersDataImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/Painting-BeautifulNumbers-HP.png?v=1645552337' %}
+{% assign infoGalleryDataImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/LIGHTNING_JACKET_HP.jpg?v=1645552337' %}
+
+{% render 'navigation-bar', isTransparentNav: isTransparentNav %}
 <home-sections-home-video-header>
 </home-sections-home-video-header>
 <home-sections-home-now-is-better
@@ -43,12 +33,14 @@
   :info-beautiful-numbers-data="{
     beautifulNumbersText: `{{ 'home.beautifulNumbersText' | t }}`,
     beautifulNumbersButton: `{{ 'home.beautifulNumbersButton' | t }}`,
+    imageUrl: `{{ infoBeautifulNumbersDataImageUrl }}`,
   }"
 >
 </home-sections-home-info-beautiful-numbers>
 <home-sections-home-info-gallery
   :info-gallery-data="{
     gallery: `{{ 'home.gallery' | t }}`,
+    imageUrl: `{{ infoGalleryDataImageUrl }}`,
   }"
 >
 </home-sections-home-info-gallery>
@@ -94,19 +86,8 @@
   }"
 >
 </global-sections-global-good-news>
-<global-sections-global-footer
-  :footer-data="{
-    footerDeliveries: `{{ 'home.footerDeliveries' | t }}`,
-    footerTerms: `{{ 'home.footerTerms' | t }}`,
-    footerNewsletter: `{{ 'home.footerNewsletter' | t }}`,
-    footerStockists: `{{ 'home.footerStockists' | t }}`,
-    footerContact: `{{ 'home.footerContact' | t }}`,
-    footerAbout: `{{ 'home.footerAbout' | t }}`,
-    footerRights: `{{ 'home.footerRights' | t }}`,
-    footerDollar: `{{ 'home.footerDollar' | t }}`,
-  }"
->
-</global-sections-global-footer>
+{% render 'footer' %}
+
 
   {% schema %}
 {

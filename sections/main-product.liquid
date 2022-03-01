@@ -1,31 +1,30 @@
-<navigation-navigation-bar
-  :navigation-bar-data="{
-    isTransparent: false,
-    shoppingBag: `{{ 'navigation.shoppingBag' | t }}`,
-    currencyUsd: `{{ 'navigation.currencyUsd' | t }}`,
-    rootUrl: `{{ routes.root_url }}`,
-    cartUrl: `{{ routes.cart_url }}`,
-    collectionUrl: '/collections/all',
-    collectionName: 'Collection',
-    beautifulNumbersUrl: '/pages/beautiful-numbers',
-    beautifulNumbersName: 'Beautiful Numbers',
-    cartItemCount: `{{ cart.item_count }}`,
-    cartTotalPrice: `{{ cart.total_price }}`,
-  }"
->
-</navigation-navigation-bar>
-{% if product.url == '/products/life-shirt' %}
+{% assign isTransparentNav = 'false' %}
+{% assign goodNewsIsBlue = 'false' %}
+
+{% assign tripleInfoClass = 'triple-info__dark-green' %}
+{% assign tripleInfoTextClass = 'triple-info__text-white' %}
+{% assign tripleInfoLineClass = 'triple-info__line-white' %}
+
+{% render 'navigation-bar', isTransparentNav: isTransparentNav %}
+{% if product.url == settings.productsLifeShirtUrl %}
   <product-products-life-shirt
     :life-shirt-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: `{{ 'product.process' | t }}`,
-      productDescriptionData: {
-        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
-        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
-        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
-        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
-        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
-        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      tripleInfoData: {
+        deliveryUrl: `{{ settings.deliveryUrl }}`,
+        firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        firstTextLowerOne: `{{ 'product.deliveryInformationLowerOne' | t }}`,
+        firstTextLowerTwo: `{{ 'product.deliveryInformationLowerTwo' | t }}`,
+        secondTextUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        secondTextLowerOne: `{{ 'product.sizeFitLowerOneFrench' | t }}`,
+        secondTextLowerTwo: `{{ 'product.sizeFitLowerTwo' | t }}`,
+        secondTextLowerThree: `{{ 'product.sizeFitLowerThree' | t }}`,
+        thirdTextUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        thirdTextLower: `{{ 'product.fabricCareLowerJapan' | t }}`,
+        tripleInfoClass: `{{ tripleInfoClass }}`,
+        tripleInfoTextClass: `{{ tripleInfoTextClass }}`,
+        tripleInfoLineClass: `{{ tripleInfoLineClass }}`,
       },
       productDetailsData: {
         productItem: {
@@ -52,18 +51,25 @@
   </product-products-life-shirt>
 {% endif %}
 
-{% if product.url == '/products/lightning-jacket' %}
+{% if product.url == settings.productsLightningJacketUrl %}
   <product-products-lightning-jacket
     :lightning-jacket-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: `{{ 'product.process' | t }}`,
-      productDescriptionData: {
-        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
-        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
-        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
-        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
-        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
-        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      tripleInfoData: {
+        deliveryUrl: `{{ settings.deliveryUrl }}`,
+        firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        firstTextLowerOne: `{{ 'product.deliveryInformationLowerOne' | t }}`,
+        firstTextLowerTwo: `{{ 'product.deliveryInformationLowerTwo' | t }}`,
+        secondTextUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        secondTextLowerOne: `{{ 'product.sizeFitLowerOneBomber' | t }}`,
+        secondTextLowerTwo: `{{ 'product.sizeFitLowerTwo' | t }}`,
+        secondTextLowerThree: `{{ 'product.sizeFitLowerThree' | t }}`,
+        thirdTextUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        thirdTextLower: `{{ 'product.fabricCareLowerWater' | t }}`,
+        tripleInfoClass: `{{ tripleInfoClass }}`,
+        tripleInfoTextClass: `{{ tripleInfoTextClass }}`,
+        tripleInfoLineClass: `{{ tripleInfoLineClass }}`,
       },
       productDetailsData: {
         productItem: {
@@ -95,18 +101,25 @@
   </product-products-lightning-jacket>
 {% endif %}
 
-{% if product.url == '/products/marathon-hoodie' %}
+{% if product.url == settings.productsMarathonHoodieUrl %}
   <product-products-marathon-hoodie
     :marathon-hoodie-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: `{{ 'product.process' | t }}`,
-      productDescriptionData: {
-        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
-        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
-        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
-        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
-        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
-        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      tripleInfoData: {
+        deliveryUrl: `{{ settings.deliveryUrl }}`,
+        firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        firstTextLowerOne: `{{ 'product.deliveryInformationLowerOne' | t }}`,
+        firstTextLowerTwo: `{{ 'product.deliveryInformationLowerTwo' | t }}`,
+        secondTextUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        secondTextLowerOne: `{{ 'product.sizeFitLowerOneComfortable' | t }}`,
+        secondTextLowerTwo: `{{ 'product.sizeFitLowerTwo' | t }}`,
+        secondTextLowerThree: `{{ 'product.sizeFitLowerThree' | t }}`,
+        thirdTextUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        thirdTextLower: `{{ 'product.fabricCareLowerUsa' | t }}`,
+        tripleInfoClass: `{{ tripleInfoClass }}`,
+        tripleInfoTextClass: `{{ tripleInfoTextClass }}`,
+        tripleInfoLineClass: `{{ tripleInfoLineClass }}`,
       },
       productDetailsData: {
         productItem: {
@@ -135,18 +148,25 @@
   </product-products-marathon-hoodie>
 {% endif %}
 
-{% if product.url == '/products/marathon-pants' %}
+{% if product.url == settings.productsMarathonPantsUrl %}
   <product-products-marathon-pants
     :marathon-pants-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: `{{ 'product.process' | t }}`,
-      productDescriptionData: {
-        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
-        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
-        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
-        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
-        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
-        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      tripleInfoData: {
+        deliveryUrl: `{{ settings.deliveryUrl }}`,
+        firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        firstTextLowerOne: `{{ 'product.deliveryInformationLowerOne' | t }}`,
+        firstTextLowerTwo: `{{ 'product.deliveryInformationLowerTwo' | t }}`,
+        secondTextUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        secondTextLowerOne: `{{ 'product.sizeFitLowerOneLoose' | t }}`,
+        secondTextLowerTwo: `{{ 'product.sizeFitLowerTwo' | t }}`,
+        secondTextLowerThree: `{{ 'product.sizeFitLowerThree' | t }}`,
+        thirdTextUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        thirdTextLower: `{{ 'product.fabricCareLowerUsa' | t }}`,
+        tripleInfoClass: `{{ tripleInfoClass }}`,
+        tripleInfoTextClass: `{{ tripleInfoTextClass }}`,
+        tripleInfoLineClass: `{{ tripleInfoLineClass }}`,
       },
       productDetailsData: {
         productItem: {
@@ -175,18 +195,25 @@
   </product-products-marathon-pants>
 {% endif %}
 
-{% if product.url == '/products/opinion-coat' %}
+{% if product.url == settings.productsOpinionCoatUrl %}
   <product-products-opinion-coat
     :opinion-coat-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: `{{ 'product.process' | t }}`,
-      productDescriptionData: {
-        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
-        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
-        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
-        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
-        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
-        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      tripleInfoData: {
+        deliveryUrl: `{{ settings.deliveryUrl }}`,
+        firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        firstTextLowerOne: `{{ 'product.deliveryInformationLowerOne' | t }}`,
+        firstTextLowerTwo: `{{ 'product.deliveryInformationLowerTwo' | t }}`,
+        secondTextUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        secondTextLowerOne: `{{ 'product.sizeFitLowerOne' | t }}`,
+        secondTextLowerTwo: `{{ 'product.sizeFitLowerTwo' | t }}`,
+        secondTextLowerThree: `{{ 'product.sizeFitLowerThree' | t }}`,
+        thirdTextUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        thirdTextLower: `{{ 'product.fabricCareLowerJapanTwo' | t }}`,
+        tripleInfoClass: `{{ tripleInfoClass }}`,
+        tripleInfoTextClass: `{{ tripleInfoTextClass }}`,
+        tripleInfoLineClass: `{{ tripleInfoLineClass }}`,
       },
       productDetailsData: {
         productItem: {
@@ -215,18 +242,25 @@
   </product-products-opinion-coat>
 {% endif %}
 
-{% if product.url == '/products/pedestrian-sweater' %}
+{% if product.url == settings.productsPedestrianSweaterUrl %}
   <product-products-pedestrian-sweater
     :pedestrian-sweater-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: `{{ 'product.process' | t }}`,
-      productDescriptionData: {
-        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
-        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
-        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
-        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
-        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
-        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      tripleInfoData: {
+        deliveryUrl: `{{ settings.deliveryUrl }}`,
+        firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        firstTextLowerOne: `{{ 'product.deliveryInformationLowerOne' | t }}`,
+        firstTextLowerTwo: `{{ 'product.deliveryInformationLowerTwo' | t }}`,
+        secondTextUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        secondTextLowerOne: `{{ 'product.sizeFitLowerOneSlim' | t }}`,
+        secondTextLowerTwo: `{{ 'product.sizeFitLowerTwo' | t }}`,
+        secondTextLowerThree: `{{ 'product.sizeFitLowerThree' | t }}`,
+        thirdTextUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        thirdTextLower: `{{ 'product.fabricCareLowerItalian' | t }}`,
+        tripleInfoClass: `{{ tripleInfoClass }}`,
+        tripleInfoTextClass: `{{ tripleInfoTextClass }}`,
+        tripleInfoLineClass: `{{ tripleInfoLineClass }}`,
       },
       productDetailsData: {
         productItem: {
@@ -253,18 +287,25 @@
   </product-products-pedestrian-sweater>
 {% endif %}
 
-{% if product.url == '/products/progress-shirt' %}
+{% if product.url == settings.productsProgressShirtUrl %}
   <product-products-progress-shirt
     :progress-shirt-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: `{{ 'product.process' | t }}`,
-      productDescriptionData: {
-        deliveryInformationUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
-        deliveryInformationLower: `{{ 'product.deliveryInformationLower' | t }}`,
-        sizeFitUpper: `{{ 'product.sizeFitUpper' | t }}`,
-        sizeFitLower: `{{ 'product.sizeFitLower' | t }}`,
-        fabricCareUpper: `{{ 'product.fabricCareUpper' | t }}`,
-        fabricCareLower: `{{ 'product.fabricCareLower' | t }}`,
+      tripleInfoData: {
+        deliveryUrl: `{{ settings.deliveryUrl }}`,
+        firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
+        firstTextLowerOne: `{{ 'product.deliveryInformationLowerOne' | t }}`,
+        firstTextLowerTwo: `{{ 'product.deliveryInformationLowerTwo' | t }}`,
+        secondTextUpper: `{{ 'product.sizeFitUpper' | t }}`,
+        secondTextLowerOne: `{{ 'product.sizeFitLowerOneFrench' | t }}`,
+        secondTextLowerTwo: `{{ 'product.sizeFitLowerTwo' | t }}`,
+        secondTextLowerThree: `{{ 'product.sizeFitLowerThree' | t }}`,
+        thirdTextUpper: `{{ 'product.fabricCareUpper' | t }}`,
+        thirdTextLower: `{{ 'product.fabricCareLowerFrench' | t }}`,
+        tripleInfoClass: `{{ tripleInfoClass }}`,
+        tripleInfoTextClass: `{{ tripleInfoTextClass }}`,
+        tripleInfoLineClass: `{{ tripleInfoLineClass }}`,
       },
       productDetailsData: {
         productItem: {
@@ -294,6 +335,7 @@
 <global-sections-global-good-news
   :good-news-data="{
     goodNews: `{{ 'home.goodNews' | t }}`,
+    goodNewsIsBlue: `{{ goodNewsIsBlue }}`,
     products: {
       lifeShirt: {
         title: `{{ all_products["life-shirt"].title }}`,
@@ -329,19 +371,9 @@
   }"
 >
 </global-sections-global-good-news>
-<global-sections-global-footer
-  :footer-data="{
-    footerDeliveries: `{{ 'home.footerDeliveries' | t }}`,
-    footerTerms: `{{ 'home.footerTerms' | t }}`,
-    footerNewsletter: `{{ 'home.footerNewsletter' | t }}`,
-    footerStockists: `{{ 'home.footerStockists' | t }}`,
-    footerContact: `{{ 'home.footerContact' | t }}`,
-    footerAbout: `{{ 'home.footerAbout' | t }}`,
-    footerRights: `{{ 'home.footerRights' | t }}`,
-    footerDollar: `{{ 'home.footerDollar' | t }}`,
-  }"
->
-</global-sections-global-footer>
+{% render 'size-table' %}
+{% render 'footer' %}
+
 
 {% schema %}
 {
