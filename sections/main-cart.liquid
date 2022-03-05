@@ -20,9 +20,13 @@
     rightSideTotal: `{{ 'shoppingBag.rightSideTotal' | t }}`,
     rightSideCheckout: `{{ 'shoppingBag.rightSideCheckout' | t }}`,
     delivery: `{{ 'shoppingBag.delivery' | t }}`,
+    emptyShoppingBag: `{{ 'shoppingBag.emptyShoppingBag' | t }}`,
+    emptyShoppingBagButton: `{{ 'shoppingBag.emptyShoppingBagButton' | t }}`,
+    collectionUrl: `{{ settings.collectionUrl }}`,
   }"
 >
 </cart-shopping-bag>
+{% render 'cookie-banner' %}
 
   {% schema %}
 {

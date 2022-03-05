@@ -1,7 +1,8 @@
 {% assign isTransparentNav = 'false' %}
 {% assign goodNewsIsBlue = 'true' %}
 {% assign goodNewsIsNotBlue = 'false' %}
-{% assign showButton = 'false' %}
+{% assign showButtonBeutifulNumbers = 'false' %}
+{% assign showButtonAboutUs = 'false' %}
 {% assign textImageBlockBlue = 'text-image-block_blue' %}
 {% assign col6Lg = 'col-6-lg' %}
 {% assign col3Lg = 'col-3-lg' %}
@@ -10,18 +11,18 @@
 {% assign ifNotTextRight = 'false' %}
 
 
-{% assign infoBeautifulNumbersDataImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/beautiful-numbers-painting.jpg?v=1645552324' %}
-{% assign infoGalleryDataImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/beautiful-numbers-gallery.jpg?v=1645552324' %}
+{% assign infoBeautifulNumbersDataImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/beautiful-numbers-painting.jpg?v=1646499321' %}
+{% assign infoGalleryDataImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/beautiful-numbers-gallery.jpg?v=1646499223' %}
 
 {% assign retailersFirstImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/sagmeister-store.jpg?v=1645552511' %}
 {% assign retailersSecondImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/Sagmeister-Women.jpg?v=1645552511' %}
 {% assign retailersThirdImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/mak-store.jpg?v=1645552511' %}
 {% assign retailersFourthImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/Rag.jpg?v=1645552511' %}
 
-{% assign aboutFirstImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/koala-fabric.jpg?v=1645547036' %}
-{% assign aboutSecondImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/labels-signing.jpg?v=1645547036' %}
-{% assign aboutThirdImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/koala-sketch.jpg?v=1645547036' %}
-{% assign aboutFourthImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/123-all.jpg?v=1645547036' %}
+{% assign aboutFirstImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/koala-fabric.jpg?v=1646499037' %}
+{% assign aboutSecondImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/labels-signing.jpg?v=1646499109' %}
+{% assign aboutThirdImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/koala-sketch.jpg?v=1646499067' %}
+{% assign aboutFourthImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/123-all.jpg?v=1646499017' %}
 
 {% render 'navigation-bar', isTransparentNav: isTransparentNav %}
 {% if canonical_url contains settings.beautifulNumbersUrl %}
@@ -32,7 +33,7 @@
       goodNewsIsBlue: `{{ goodNewsIsNotBlue }}`,
       textImageBlockData: [
         {
-          showButton: `{{ showButton }}`,
+          showButton: `{{ showButtonBeutifulNumbers }}`,
           textImageBlockClass: `{{ textImageBlockYellow }}`,
           textImageBlockColLeftClass: `{{ col3Lg }}`,
           textImageBlockColRightClass: `{{ col6Lg }}`,
@@ -41,7 +42,7 @@
           firstSectionFirstText: `{{ 'beautifulNumbers.infoBeautifulNumbers' | t }}`,
         },
         {
-          showButton: `{{ showButton }}`,
+          showButton: `{{ showButtonAboutUs }}`,
           textImageBlockClass: `{{ textImageBlockBlue }}`,
           textImageBlockColLeftClass: `{{ col6Lg }}`,
           textImageBlockColRightClass: `{{ col3Lg }}`,
@@ -55,33 +56,41 @@
           title: `{{ all_products["life-shirt"].title }}`,
           price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsLifeShirtUrl }}`,
         },
         lightningJacket: {
           title: `{{ all_products["lightning-jacket"].title }}`,
           price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsLightningJacketUrl }}`,
         },
         marathonHoodie: {
           title: `{{ all_products["marathon-hoodie"].title }}`,
           price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsMarathonHoodieUrl }}`,
         },
         opinionCoat: {
           title: `{{ all_products["opinion-coat"].title }}`,
           price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsOpinionCoatUrl }}`,
         },
         pedestrianSweater: {
           title: `{{ all_products["pedestrian-sweater"].title }}`,
           price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsPedestrianSweaterUrl }}`,
         },
         progressShirt: {
           title: `{{ all_products["progress-shirt"].title }}`,
           price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsProgressShirtUrl }}`,
         },
       },
+      collectionUrl: `{{ settings.collectionUrl }}`,
+      look: `{{ 'home.look' | t }}`,
     }"
   >
   </page-pages-beautiful-numbers-page>
@@ -329,31 +338,37 @@
           title: `{{ all_products["life-shirt"].title }}`,
           price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsLifeShirtUrl }}`,
         },
         lightningJacket: {
           title: `{{ all_products["lightning-jacket"].title }}`,
           price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsLightningJacketUrl }}`,
         },
         marathonHoodie: {
           title: `{{ all_products["marathon-hoodie"].title }}`,
           price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsMarathonHoodieUrl }}`,
         },
         opinionCoat: {
           title: `{{ all_products["opinion-coat"].title }}`,
           price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsOpinionCoatUrl }}`,
         },
         pedestrianSweater: {
           title: `{{ all_products["pedestrian-sweater"].title }}`,
           price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsPedestrianSweaterUrl }}`,
         },
         progressShirt: {
           title: `{{ all_products["progress-shirt"].title }}`,
           price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
           imgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+          productUrl: `{{ settings.productsProgressShirtUrl }}`,
         },
       },
     }"
@@ -361,6 +376,7 @@
   </page-pages-retailers-page>
 {% endif %}
 {% render 'footer' %}
+{% render 'cookie-banner' %}
 
 {% schema %}
 {

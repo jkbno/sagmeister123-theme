@@ -5,12 +5,25 @@
 {% assign tripleInfoTextClass = 'triple-info__text-white' %}
 {% assign tripleInfoLineClass = 'triple-info__line-white' %}
 
+{% assign lightningJacketProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/LIGHTNING_JACKET_detail.jpg?v=1646499643' %}
+{% assign lifeShirtProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/LIFE_SHIRT_detail.jpg?v=1646499585' %}
+{% assign marathonHoodieProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/MARATHON_HOOD_detail.jpg?v=1645552488' %}
+{% assign marathonHoodieSuggestedProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/MARATHON_PANTS_detail-suggested.jpg?v=1645552488' %}
+{% assign marathonPantsProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/MARATHON_PANT_detail.jpg?v=1645552488' %}
+{% assign marathonPantsSuggestedProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/MARATHON_HOOD_details-suggested.jpg?v=1645552488' %}
+{% assign opinionCoatProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/OPINION_TRENCH_detail.jpg?v=1645552488' %}
+{% assign pedestrianSweaterProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/PEDESTRIAN_SWEATER_detail.jpg?v=1645552489' %}
+{% assign progressShirtProcessImageUrl = 'https://cdn.shopify.com/s/files/1/0564/0034/7229/files/PROGRESS_SHIRT_M_detail.jpg?v=1645552488' %}
+
 {% render 'navigation-bar', isTransparentNav: isTransparentNav %}
 {% if product.url == settings.productsLifeShirtUrl %}
   <product-products-life-shirt
     :life-shirt-data="{
       backTop: `{{ 'product.backTop' | t }}`,
-      process: `{{ 'product.process' | t }}`,
+      process: {
+        text: `{{ 'product.lifeShirtProcess' | t }}`,
+        imageUrl: `{{ lifeShirtProcessImageUrl }}`,
+      },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
         firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
@@ -55,7 +68,10 @@
   <product-products-lightning-jacket
     :lightning-jacket-data="{
       backTop: `{{ 'product.backTop' | t }}`,
-      process: `{{ 'product.process' | t }}`,
+      process: {
+        text: `{{ 'product.lightningJacketProcess' | t }}`,
+        imageUrl: `{{ lightningJacketProcessImageUrl }}`,
+      },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
         firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
@@ -105,7 +121,16 @@
   <product-products-marathon-hoodie
     :marathon-hoodie-data="{
       backTop: `{{ 'product.backTop' | t }}`,
-      process: `{{ 'product.process' | t }}`,
+      processOne: {
+        text: `{{ 'product.marathonHoodieProcessOne' | t }}`,
+        imageUrl: `{{ marathonHoodieProcessImageUrl }}`,
+      },
+      processTwo: {
+        text: `{{ 'product.marathonHoodieProcessTwo' | t }}`,
+        imageUrl: `{{ marathonHoodieSuggestedProcessImageUrl }}`,
+        button: `{{ 'product.marathonHoodieProcessButton' | t }}`,
+        url: `{{ settings.productsMarathonPantsUrl }}`,
+      },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
         firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
@@ -152,7 +177,16 @@
   <product-products-marathon-pants
     :marathon-pants-data="{
       backTop: `{{ 'product.backTop' | t }}`,
-      process: `{{ 'product.process' | t }}`,
+      processOne: {
+        text: `{{ 'product.marathonPantsProcessOne' | t }}`,
+        imageUrl: `{{ marathonPantsProcessImageUrl }}`,
+      },
+      processTwo: {
+        text: `{{ 'product.marathonPantsProcessTwo' | t }}`,
+        imageUrl: `{{ marathonPantsSuggestedProcessImageUrl }}`,
+        button: `{{ 'product.marathonPantsProcessButton' | t }}`,
+        url: `{{ settings.productsMarathonHoodieUrl }}`,
+      },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
         firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
@@ -199,7 +233,10 @@
   <product-products-opinion-coat
     :opinion-coat-data="{
       backTop: `{{ 'product.backTop' | t }}`,
-      process: `{{ 'product.process' | t }}`,
+      process: {
+        text: `{{ 'product.opinionCoatProcess' | t }}`,
+        imageUrl: `{{ opinionCoatProcessImageUrl }}`,
+      },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
         firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
@@ -246,7 +283,10 @@
   <product-products-pedestrian-sweater
     :pedestrian-sweater-data="{
       backTop: `{{ 'product.backTop' | t }}`,
-      process: `{{ 'product.process' | t }}`,
+      process: {
+        text: `{{ 'product.pedestrianSweaterProgress' | t }}`,
+        imageUrl: `{{ pedestrianSweaterProcessImageUrl }}`,
+      },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
         firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
@@ -291,7 +331,10 @@
   <product-products-progress-shirt
     :progress-shirt-data="{
       backTop: `{{ 'product.backTop' | t }}`,
-      process: `{{ 'product.process' | t }}`,
+      process: {
+        text: `{{ 'product.progressShirtProgress' | t }}`,
+        imageUrl: `{{ progressShirtProcessImageUrl }}`,
+      },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
         firstTextUpper: `{{ 'product.deliveryInformationUpper' | t }}`,
@@ -341,31 +384,37 @@
         title: `{{ all_products["life-shirt"].title }}`,
         price: `{{ all_products["life-shirt"].price | money_without_trailing_zeros }}`,
         imgUrl: `{{ all_products["life-shirt"].images[0] | image_url }}`,
+        productUrl: `{{ settings.productsLifeShirtUrl }}`,
       },
       lightningJacket: {
         title: `{{ all_products["lightning-jacket"].title }}`,
         price: `{{ all_products["lightning-jacket"].price | money_without_trailing_zeros }}`,
         imgUrl: `{{ all_products["lightning-jacket"].images[0] | image_url }}`,
+        productUrl: `{{ settings.productsLightningJacketUrl }}`,
       },
       marathonHoodie: {
         title: `{{ all_products["marathon-hoodie"].title }}`,
         price: `{{ all_products["marathon-hoodie"].price | money_without_trailing_zeros }}`,
         imgUrl: `{{ all_products["marathon-hoodie"].images[0] | image_url }}`,
+        productUrl: `{{ settings.productsMarathonHoodieUrl }}`,
       },
       opinionCoat: {
         title: `{{ all_products["opinion-coat"].title }}`,
         price: `{{ all_products["opinion-coat"].price | money_without_trailing_zeros }}`,
         imgUrl: `{{ all_products["opinion-coat"].images[0] | image_url }}`,
+        productUrl: `{{ settings.productsOpinionCoatUrl }}`,
       },
       pedestrianSweater: {
         title: `{{ all_products["pedestrian-sweater"].title }}`,
         price: `{{ all_products["pedestrian-sweater"].price | money_without_trailing_zeros }}`,
         imgUrl: `{{ all_products["pedestrian-sweater"].images[0] | image_url }}`,
+        productUrl: `{{ settings.productsPedestrianSweaterUrl }}`,
       },
       progressShirt: {
         title: `{{ all_products["progress-shirt"].title }}`,
         price: `{{ all_products["progress-shirt"].price | money_without_trailing_zeros }}`,
         imgUrl: `{{ all_products["progress-shirt"].images[0] | image_url }}`,
+        productUrl: `{{ settings.productsProgressShirtUrl }}`,
       },
     },
   }"
@@ -373,7 +422,7 @@
 </global-sections-global-good-news>
 {% render 'size-table' %}
 {% render 'footer' %}
-
+{% render 'cookie-banner' %}
 
 {% schema %}
 {
