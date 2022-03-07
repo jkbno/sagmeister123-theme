@@ -12,11 +12,23 @@
 {% assign ifTextRight = 'true' %}
 {% assign ifNotTextRight = 'false' %}
 
-{% assign infoBeautifulNumbersDataImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Painting-BeautifulNumbers-HP.png?v=1646499495' %}
-{% assign infoGalleryDataImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/LIGHTNING_JACKET_HP.jpg?v=1646499385' %}
+{% assign infoBeautifulNumbersDataImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Painting-BeautifulNumbers-HP.jpg?v=1646535111' %}
+{% assign infoGalleryDataImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/LIGHTNING_JACKET_HP.jpg?v=1646535225' %}
+
+{% assign homeVideoDesktopUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/123_Video_Desktop.mp4?v=1646531058' %}
+{% assign homeVideoPosterDesktopUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/123_Video_Desktop.jpg?v=1646532625' %}
+{% assign homeVideoMobileUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/123_Video_Mobile.mp4?v=1646531707' %}
+{% assign homeVideoPosterMobilepUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/123_Video_Mobile.jpg?v=1646533247' %}
 
 {% render 'navigation-bar', isTransparentNav: isTransparentNav %}
-<home-sections-home-video-header>
+<home-sections-home-video-header
+  :home-video-data="{
+    homeVideoDesktopUrl: `{{ homeVideoDesktopUrl }}`,
+    homeVideoPosterDesktopUrl: `{{ homeVideoPosterDesktopUrl }}`,
+    homeVideoMobileUrl: `{{ homeVideoMobileUrl }}`,
+    homeVideoPosterMobilepUrl: `{{ homeVideoPosterMobilepUrl }}`,
+  }"
+>
 </home-sections-home-video-header>
 <home-sections-home-now-is-better
   :now-is-better-data="{
