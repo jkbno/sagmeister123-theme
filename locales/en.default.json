@@ -379,7 +379,8 @@
     "cmMenInseamXl": "81"
   },
   "cookies": {
-    "text": "This website uses cookies. By continuing to browse the site you are agreeing to the use of cookies. Read more here.",
+    "text": "This website uses cookies. By continuing to browse the site you are agreeing to the use of cookies. ",
+    "textLink": "Read more here.",
     "button": "OK"
   },
   "accessibility": {
