@@ -102,6 +102,11 @@
         "id": "aboutUrl",
         "type": "text",
         "default": "/pages/about"
+      },
+      {
+        "id": "instagramUrl",
+        "type": "text",
+        "default": "https://www.instagram.com/sagmeister123/?hl=en"
       }
     ]
   },
