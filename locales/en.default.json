@@ -42,6 +42,7 @@
     "sizeName": "Size:",
     "sizeGuide": "Size Guide",
     "addBag": "Add to Bag",
+    "soldOut": "Notify Me When Available",
     "deliveryInformationUpper": "Delivery Information",
     "deliveryInformationLowerOne": "Free US delivery, $25 for rest of the world. For more information vist ",
     "deliveryInformationLowerTwo": "Delivery and Returns.",
@@ -63,11 +64,11 @@
     "fabricCareLowerWater": "Water repellent 50% cotton 50% nylon twill from Japan, Hand or machine wash in cold water and drip dry or dry clean.",
     "nowIsBetter": "Now Is Better",
     "lightningJacketProcess": "The colorful lightining design is printed in a small Industry City studio in New York City. Unzip it, and inside you will find a soft lining featuring our koala printed for us in Italy.",
-    "lightningJacketFirstSlideYear": "In 1950",
-    "lightningJacketFirstSlideText": "50 people died struck by lightening (per 1 million people).",
+    "lightningJacketFirstSlideYear": "In 1915",
+    "lightningJacketFirstSlideText": "50 people died struck by lightening (per 10 million people).",
     "lightningJacketSecondSlideYear": "By 1948",
     "lightningJacketSecondSlideText": "this number was halved, 25 people died struck by lightening.",
-    "lightningJacketThirdSlideYear": "By 1962",
+    "lightningJacketThirdSlideYear": "By 1981",
     "lightningJacketThirdSlideText": "Only 6 died.  Our progress predicting the weather and our safety equipment have vastly improved.",
     "lightningJacketFourthSlideYear": "In 2015",
     "lightningJacketFourthSlideTextFirst": "only a single person died.",
@@ -95,7 +96,7 @@
     "opinionCoatSecondSlideYear": "Ten years later",
     "opinionCoatSecondSlideText": "only a third of Americans shared that opinion.",
     "opinionCoatThirdSlideYear": "Twenty years later",
-    "opinionCoatThirdSlideText": "only a quarter of americans believed women should return to the kitchen.",
+    "opinionCoatThirdSlideText": "only a quarter of Americans believed women should return to the kitchen.",
     "pedestrianSweaterProgress": "Pedestrian, yet luxurious. The sweater has been knitted and assembled for us by a small family business in Brooklyn. For the egg shape we use Egyptian cotton harvested by hand in five stages, avoiding defoliants and other chemicals used in mechanical harvesting.",
     "pedestrianSweaterFirstSlideYear": "In 1935",
     "pedestrianSweaterFirstSlideText": "11 American pedestrians died in traffic - per 100,000 people.",
@@ -382,6 +383,11 @@
     "text": "This website uses cookies. By continuing to browse the site you are agreeing to the use of cookies. ",
     "textLink": "Read more here.",
     "button": "OK"
+  },
+  "soldOut": {
+    "title": "Let me know when it’s back",
+    "emailText": "Email Address",
+    "button": "Notify Me When Available"
   },
   "accessibility": {
     "skip_to_text": "TODO"

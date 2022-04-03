@@ -1,0 +1,69 @@
+<global-sections-sold-out-banner-cart
+    :sold-out-banner-data="{
+      title: `{{ 'soldOut.title' | t }}`,
+      emailText: `{{ 'soldOut.emailText' | t }}`,
+      button: `{{ 'soldOut.button' | t }}`,
+      productsId: {
+        'Life Shirt': `{{ all_products["life-shirt"].id }}`,
+        'Lightning Jacket': `{{ all_products["lightning-jacket"].id }}`,
+        'Marathon Hoodie': `{{ all_products["marathon-hoodie"].id }}`,
+        'Marathon Pants': `{{ all_products["marathon-pants"].id }}`,
+        'Opinion Coat': `{{ all_products["opinion-coat"].id }}`,
+        'Pedestrian Sweater': `{{ all_products["pedestrian-sweater"].id }}`,
+        'Progress Shirt': `{{ all_products["progress-shirt"].id }}`,
+      },
+      cartItems: `{{ cart.items | json | replace: '"', "'" }}`,
+    }"
+  >
+</global-sections-sold-out-banner-cart>
+
+{% comment %} this solution is extremely lame but because of the security reasons (liquid is well desined on this matter)  {% endcomment %}
+{% comment %} in this architecture with vue I cannot pass all the fields from the documentation like variant.inventory_quantity {% endcomment %}
+{% comment %} I can only print this value on the liquid rendering part, so I have to show it on the page {% endcomment %}
+{% comment %} and then parse the hidden data in the vue part {% endcomment %}
+{% comment %} it takes so much space so if you have to ever change the webpage find this ugly creature fast {% endcomment %}
+
+<div style="display: none">
+  <table class="life-shirt-list-string-container">
+    {% tablerow variant in all_products["life-shirt"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["life-shirt"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="lightning-jacket-list-string-container">
+    {% tablerow variant in all_products["lightning-jacket"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["lightning-jacket"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="marathon-hoodie-list-string-container">
+    {% tablerow variant in all_products["marathon-hoodie"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["marathon-hoodie"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="marathon-pants-list-string-container">
+    {% tablerow variant in all_products["marathon-pants"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["marathon-pants"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="opinion-coat-list-string-container">
+    {% tablerow variant in all_products["opinion-coat"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["opinion-coat"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="pedestrian-sweater-list-string-container">
+    {% tablerow variant in all_products["pedestrian-sweater"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["pedestrian-sweater"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="progress-shirt-list-string-container">
+    {% tablerow variant in all_products["progress-shirt"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["progress-shirt"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+</div>

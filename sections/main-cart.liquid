@@ -1,5 +1,7 @@
 {% assign isTransparentNav = 'false' %}
 
+{% render 'sold-out-banner-cart' %}
+
 {% render 'navigation-bar', isTransparentNav: isTransparentNav %}
 <cart-shopping-bag
   :shopping-bag-data="{
