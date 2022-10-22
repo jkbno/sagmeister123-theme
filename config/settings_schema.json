@@ -79,6 +79,36 @@
         "default": "/products/progress-shirt"
       },
       {
+        "id": "artMarketTShirtUrl",
+        "type": "text",
+        "default": "/products/art-market-t-shirt"
+      },
+      {
+        "id": "artistsTShirtUrl",
+        "type": "text",
+        "default": "/products/artists-t-shirt"
+      },
+      {
+        "id": "blowerShirtUrl",
+        "type": "text",
+        "default": "/products/blower-shirt"
+      },
+      {
+        "id": "democraticSweaterUrl",
+        "type": "text",
+        "default": "/products/democratic-sweater"
+      },
+      {
+        "id": "murderousCoatUrl",
+        "type": "text",
+        "default": "/products/murderous-coat"
+      },
+      {
+        "id": "naturalDisasterLongSleeveUrl",
+        "type": "text",
+        "default": "/products/disaster-long-sleeve"
+      },
+      {
         "id": "deliveryUrl",
         "type": "text",
         "default": "/pages/delivery-and-returns"

@@ -1,52 +1,129 @@
 {% assign isTransparentNav = 'false' %}
 
+{% assign artMarketTShirtVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/fa0f4fbee0e14f35a3f698a6287eb15a.mp4' %}
+{% assign artMarketTShirtPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Art_Market_T-Shirt_Poster.png?v=1666437112' %}
+{% assign artistsTShirtVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/2cfe7fa164e64ffc9e9e5b2d7be5c892.mp4' %}
+{% assign artistsTShirtPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Artists_T-Shirt_Poster.png?v=1666437112' %}
+{% assign blowerShirtVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/35f00ff068934c3a82f3fc1d754c2530.mp4' %}
+{% assign blowerShirtPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Blower_Shirt_Poster.png?v=1666437114' %}
+{% assign democraticSweaterVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/70ebf90e87624708bd43883669af5226.mp4' %}
+{% assign democraticSweaterPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Democratic_Sweater_Poster.png?v=1666437117' %}
+{% assign lifeShirtVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/579cb93ae5f740c4bcfb9e637f542ef9.mp4' %}
+{% assign lifeShirtPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Life_Shirt_Poster.png?v=1666437116' %}
+{% assign lightningJacketVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/32a71e2dae884669845c0baf8ccdfc1b.mp4' %}
+{% assign lightningJacketPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Lightning_Jacket_Poster.png?v=1666437113' %}
+{% assign marathonHoodieVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/7b016ca88b8f44b2b6d2583af4abe429.mp4' %}
+{% assign marathonHoodiePosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Marathon_Hoodie_Poster.png?v=1666437114' %}
+{% assign marathonPantsVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/aa80d8711008414698a9444d40f96a62.mp4' %}
+{% assign marathonPantsPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Marathon_Pants_Poster.png?v=1666437112' %}
+{% assign murderousCoatVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/ed883441343d42e2bee7eb25be00f5d6.mp4' %}
+{% assign murderousCoatPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Murderous_Coat_Poster.png?v=1666437115' %}
+{% assign naturalDisasterLongSleeveVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/29ceba1ca0ae4346a11f8ee679a0cbb2.mp4' %}
+{% assign naturalDisasterLongSleevePosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Natural_Disaster_Long_Sleeve_Poster.png?v=1666437114' %}
+{% assign opinionCoatVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/e3c27d8feaa149dc9ef78bec5721270e.mp4' %}
+{% assign opinionCoatPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Opinion_Coat_Poster.png?v=1666437113' %}
+{% assign pedestrianSweaterVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/1a8b27db67a64441af6bea7fddf73aef.mp4' %}
+{% assign pedestrianSweaterPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Pedestrian_Sweater_Poster.png?v=1666437115' %}
+{% assign progressShirtVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/0d89fb888b1a4efca4a88d9dab4e1afc.mp4' %}
+{% assign progressShirtPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Progress_Shirt_Poster.png?v=1666437114' %}
+
 {% render 'navigation-bar', isTransparentNav: isTransparentNav %}
 <category-product-category
   :product-category-data="[
     {
+      handle: `{{ all_products["art-market-t-shirt"].handle }}`,
+      title: `{{ all_products["art-market-t-shirt"].title }}`,
+      videoUrl: `{{ artMarketTShirtVideoUrl }}`,
+      videoPosterUrl: `{{ artMarketTShirtPosterUrl }}`,
+      imageHoverSrc: `{{ all_products["art-market-t-shirt"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["artists-t-shirt"].handle }}`,
+      title: `{{ all_products["artists-t-shirt"].title }}`,
+      videoUrl: `{{ artistsTShirtVideoUrl }}`,
+      videoPosterUrl: `{{ artistsTShirtPosterUrl }}`,
+      imageHoverSrc: `{{ all_products["artists-t-shirt"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["blower-shirt"].handle }}`,
+      title: `{{ all_products["blower-shirt"].title }}`,
+      videoUrl: `{{ blowerShirtVideoUrl }}`,
+      videoPosterUrl: `{{ blowerShirtPosterUrl }}`,
+      imageHoverSrc: `{{ all_products["blower-shirt"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["democratic-sweater"].handle }}`,
+      title: `{{ all_products["democratic-sweater"].title }}`,
+      videoUrl: `{{ democraticSweaterVideoUrl }}`,
+      videoPosterUrl: `{{ democraticSweaterPosterUrl }}`,
+      imageHoverSrc: `{{ all_products["democratic-sweater"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["murderous-coat"].handle }}`,
+      title: `{{ all_products["murderous-coat"].title }}`,
+      videoUrl: `{{ murderousCoatVideoUrl }}`,
+      videoPosterUrl: `{{ murderousCoatPosterUrl }}`,
+      imageHoverSrc: `{{ all_products["murderous-coat"].images.last | image_url }}`,
+    },
+    {
+      handle: `{{ all_products["disaster-long-sleeve"].handle }}`,
+      title: `{{ all_products["disaster-long-sleeve"].title }}`,
+      videoUrl: `{{ naturalDisasterLongSleeveVideoUrl }}`,
+      videoPosterUrl: `{{ naturalDisasterLongSleevePosterUrl }}`,
+      imageHoverSrc: `{{ all_products["disaster-long-sleeve"].images.last | image_url }}`,
+    },
+    {
       handle: `{{ all_products["life-shirt"].handle }}`,
       title: `{{ all_products["life-shirt"].title }}`,
-      imageMainSrc: `{{ all_products["life-shirt"].images.first | image_url }}`,
+      videoUrl: `{{ lifeShirtVideoUrl }}`,
+      videoPosterUrl: `{{ lifeShirtPosterUrl }}`,
       imageHoverSrc: `{{ all_products["life-shirt"].images.last | image_url }}`,
     },
     {
       handle: `{{ all_products["lightning-jacket"].handle }}`,
       title: `{{ all_products["lightning-jacket"].title }}`,
-      imageMainSrc: `{{ all_products["lightning-jacket"].images.first | image_url }}`,
+      videoUrl: `{{ lightningJacketVideoUrl }}`,
+      videoPosterUrl: `{{ lightningJacketPosterUrl }}`,
       imageHoverSrc: `{{ all_products["lightning-jacket"].images.last | image_url }}`,
     },
     {
       handle: `{{ all_products["marathon-hoodie"].handle }}`,
       title: `{{ all_products["marathon-hoodie"].title }}`,
-      imageMainSrc: `{{ all_products["marathon-hoodie"].images.first | image_url }}`,
+      videoUrl: `{{ marathonHoodieVideoUrl }}`,
+      videoPosterUrl: `{{ marathonHoodiePosterUrl }}`,
       imageHoverSrc: `{{ all_products["marathon-hoodie"].images.last | image_url }}`,
     },
     {
       handle: `{{ all_products["marathon-pants"].handle }}`,
       title: `{{ all_products["marathon-pants"].title }}`,
-      imageMainSrc: `{{ all_products["marathon-pants"].images.first | image_url }}`,
+      videoUrl: `{{ marathonPantsVideoUrl }}`,
+      videoPosterUrl: `{{ marathonPantsPosterUrl }}`,
       imageHoverSrc: `{{ all_products["marathon-pants"].images.last | image_url }}`,
     },
     {
       handle: `{{ all_products["opinion-coat"].handle }}`,
       title: `{{ all_products["opinion-coat"].title }}`,
-      imageMainSrc: `{{ all_products["opinion-coat"].images.first | image_url }}`,
+      videoUrl: `{{ opinionCoatVideoUrl }}`,
+      videoPosterUrl: `{{ opinionCoatPosterUrl }}`,
       imageHoverSrc: `{{ all_products["opinion-coat"].images.last | image_url }}`,
     },
     {
       handle: `{{ all_products["pedestrian-sweater"].handle }}`,
       title: `{{ all_products["pedestrian-sweater"].title }}`,
-      imageMainSrc: `{{ all_products["pedestrian-sweater"].images.first | image_url }}`,
+      videoUrl: `{{ pedestrianSweaterVideoUrl }}`,
+      videoPosterUrl: `{{ pedestrianSweaterPosterUrl }}`,
       imageHoverSrc: `{{ all_products["pedestrian-sweater"].images.last | image_url }}`,
     },
     {
       handle: `{{ all_products["progress-shirt"].handle }}`,
       title: `{{ all_products["progress-shirt"].title }}`,
-      imageMainSrc: `{{ all_products["progress-shirt"].images.first | image_url }}`,
+      videoUrl: `{{ progressShirtVideoUrl }}`,
+      videoPosterUrl: `{{ progressShirtPosterUrl }}`,
       imageHoverSrc: `{{ all_products["progress-shirt"].images.last | image_url }}`,
     },
   ]"
 >
+
 </category-product-category>
 {% render 'footer' %}
 {% render 'cookie-banner' %}

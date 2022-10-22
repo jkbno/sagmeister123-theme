@@ -66,4 +66,40 @@
       <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["progress-shirt"].title }} - {{ variant.title }}</div>
     {% endtablerow  %}
   </table>
+  <table class="art-market-t-shirt-list-string-container">
+    {% tablerow variant in all_products["art-market-t-shirt"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["art-market-t-shirt"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="artists-t-shirt-list-string-container">
+    {% tablerow variant in all_products["artists-t-shirt"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["artists-t-shirt"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="blower-shirt-list-string-container">
+    {% tablerow variant in all_products["blower-shirt"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["blower-shirt"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="democratic-sweater-list-string-container">
+    {% tablerow variant in all_products["democratic-sweater"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["democratic-sweater"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="murderous-coat-list-string-container">
+    {% tablerow variant in all_products["murderous-coat"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["murderous-coat"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
+  <table class="disaster-long-sleeve-list-string-container">
+    {% tablerow variant in all_products["disaster-long-sleeve"].variants %}
+      <div class="inventory-list-string-id">{{variant.id}} & {{ variant.inventory_quantity }}</div>
+      <div class="inventory-list-string-title">{{variant.id}} & {{ all_products["disaster-long-sleeve"].title }} - {{ variant.title }}</div>
+    {% endtablerow  %}
+  </table>
 </div>
