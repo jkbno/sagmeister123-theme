@@ -23,8 +23,8 @@
 {% assign marathonPantsPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Marathon_Pants_Poster.png?v=1666437112' %}
 {% assign murderousCoatVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/ed883441343d42e2bee7eb25be00f5d6.mp4' %}
 {% assign murderousCoatPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Murderous_Coat_Poster.png?v=1666437115' %}
-{% assign naturalDisasterLongSleeveVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/29ceba1ca0ae4346a11f8ee679a0cbb2.mp4' %}
-{% assign naturalDisasterLongSleevePosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Natural_Disaster_Long_Sleeve_Poster.png?v=1666437114' %}
+{% assign disasterLongSleeveVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/29ceba1ca0ae4346a11f8ee679a0cbb2.mp4' %}
+{% assign disasterLongSleevePosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Natural_Disaster_Long_Sleeve_Poster.png?v=1666437114' %}
 {% assign opinionCoatVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/e3c27d8feaa149dc9ef78bec5721270e.mp4' %}
 {% assign opinionCoatPosterUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Opinion_Coat_Poster.png?v=1666437113' %}
 {% assign pedestrianSweaterVideoUrl = 'https://cdn.shopify.com/videos/c/o/v/1a8b27db67a64441af6bea7fddf73aef.mp4' %}
@@ -43,7 +43,7 @@
 {% assign artistsTShirtImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Artist_Tshirt_Detail.jpg?v=1666436919' %}
 {% assign blowerShirtImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Blower_Shirt_Detail.jpg?v=1666436907' %}
 {% assign murderousCoatImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Knife_Coat_Detail.jpg?v=1666436909' %}
-{% assign naturalDisasterLongSleeveImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Natural_Disaster_Longsleeve.jpg?v=1666436908' %}
+{% assign disasterLongSleeveImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Natural_Disaster_Longsleeve.jpg?v=1666436908' %}
 {% assign democraticSweaterImageUrl = 'https://cdn.shopify.com/s/files/1/0572/4861/2546/files/Democratic_Sweater_Detail.jpg?v=1666436909' %}
 
 {% render 'sold-out-banner' %}
@@ -676,14 +676,14 @@
   </product-products-murderous-coat>
 {% endif %}
 
-{% if product.url == settings.naturalDisasterLongSleeveUrl %}
+{% if product.url == settings.disasterLongSleeveUrl %}
   <product-products-disaster-long-sleeve
     :product-data="{
       backTop: `{{ 'product.backTop' | t }}`,
       process: {
-        textFirst: `{{ 'product.naturalDisasterLongSleeveFirstText' | t }}`,
-        textSecond: `{{ 'product.naturalDisasterLongSleeveSecondText' | t }}`,
-        imageUrl: `{{ naturalDisasterLongSleeveImageUrl }}`,
+        textFirst: `{{ 'product.disasterLongSleeveFirstText' | t }}`,
+        textSecond: `{{ 'product.disasterLongSleeveSecondText' | t }}`,
+        imageUrl: `{{ disasterLongSleeveImageUrl }}`,
       },
       tripleInfoData: {
         deliveryUrl: `{{ settings.deliveryUrl }}`,
@@ -707,8 +707,8 @@
           price: `{{ all_products["disaster-long-sleeve"].price | money_without_trailing_zeros }}`,
           description: `{{ all_products["disaster-long-sleeve"].description }}`,
           imageSrcs: `{{ all_products["disaster-long-sleeve"].images | json | replace: '"', "'" }}`,
-          videoUrl: `{{ naturalDisasterLongSleeveVideoUrl }}`,
-          videoPosterUrl: `{{ naturalDisasterLongSleevePosterUrl }}`,
+          videoUrl: `{{ disasterLongSleeveVideoUrl }}`,
+          videoPosterUrl: `{{ disasterLongSleevePosterUrl }}`,
           variants: `{{ all_products["disaster-long-sleeve"].variants | json | replace: '"', "'" }}`,
         },
         cut: `{{ 'product.cut' | t }}`,
@@ -717,10 +717,10 @@
         soldOut: `{{ 'product.soldOut' | t }}`,
       },
       animationData: {
-        naturalDisasterLongSleeveFirstSlideYear: `{{ 'product.naturalDisasterLongSleeveFirstSlideYear' | t }}`,
-        naturalDisasterLongSleeveFirstSlideText: `{{ 'product.naturalDisasterLongSleeveFirstSlideText' | t }}`,
-        naturalDisasterLongSleeveSecondSlideYear: `{{ 'product.naturalDisasterLongSleeveSecondSlideYear' | t }}`,
-        naturalDisasterLongSleeveSecondSlideText: `{{ 'product.naturalDisasterLongSleeveSecondSlideText' | t }}`,
+        disasterLongSleeveFirstSlideYear: `{{ 'product.disasterLongSleeveFirstSlideYear' | t }}`,
+        disasterLongSleeveFirstSlideText: `{{ 'product.disasterLongSleeveFirstSlideText' | t }}`,
+        disasterLongSleeveSecondSlideYear: `{{ 'product.disasterLongSleeveSecondSlideYear' | t }}`,
+        disasterLongSleeveSecondSlideText: `{{ 'product.disasterLongSleeveSecondSlideText' | t }}`,
       }
     }"
   >
@@ -816,12 +816,12 @@
         videoPosterUrl: `{{ murderousCoatPosterUrl }}`,
         productUrl: `{{ settings.murderousCoatUrl }}`,
       },
-      naturalDisasterLongSleeve: {
+      disasterLongSleeve: {
         title: `{{ all_products["disaster-long-sleeve"].title }}`,
         price: `{{ all_products["disaster-long-sleeve"].price | money_without_trailing_zeros }}`,
-        videoUrl: `{{ naturalDisasterLongSleeveVideoUrl }}`,
-        videoPosterUrl: `{{ naturalDisasterLongSleevePosterUrl }}`,
-        productUrl: `{{ settings.naturalDisasterLongSleeveUrl }}`,
+        videoUrl: `{{ disasterLongSleeveVideoUrl }}`,
+        videoPosterUrl: `{{ disasterLongSleevePosterUrl }}`,
+        productUrl: `{{ settings.disasterLongSleeveUrl }}`,
       },
     },
   }"

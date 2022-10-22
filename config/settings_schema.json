@@ -4,8 +4,8 @@
     "theme_name": "Shopify Theme Lab",
     "theme_version": "1.0.0",
     "theme_author": "Jakub Nowakowski",
-    "theme_documentation_url": "https://THEME_DOCUMENTATION_URL.com",
-    "theme_support_url": "https://THEME_SUPPORT_URL.com"
+    "theme_documentation_url": "https:\/\/THEME_DOCUMENTATION_URL.com",
+    "theme_support_url": "https:\/\/THEME_SUPPORT_URL.com"
   },
   {
     "name": "t:settings_schema.custom_settings.name",
@@ -26,12 +26,12 @@
       {
         "id": "collectionUrl",
         "type": "text",
-        "default": "/collections/all"
+        "default": "\/collections\/all"
       },
       {
         "id": "beautifulNumbersUrl",
         "type": "text",
-        "default": "/pages/beautiful-numbers"
+        "default": "\/pages\/beautiful-numbers"
       },
       {
         "id": "beautifulNumbersName",
@@ -46,97 +46,97 @@
       {
         "id": "productsLifeShirtUrl",
         "type": "text",
-        "default": "/products/life-shirt"
+        "default": "\/products\/life-shirt"
       },
       {
         "id": "productsLightningJacketUrl",
         "type": "text",
-        "default": "/products/lightning-jacket"
+        "default": "\/products\/lightning-jacket"
       },
       {
         "id": "productsMarathonHoodieUrl",
         "type": "text",
-        "default": "/products/marathon-hoodie"
+        "default": "\/products\/marathon-hoodie"
       },
       {
         "id": "productsMarathonPantsUrl",
         "type": "text",
-        "default": "/products/marathon-pants"
+        "default": "\/products\/marathon-pants"
       },
       {
         "id": "productsOpinionCoatUrl",
         "type": "text",
-        "default": "/products/opinion-coat"
+        "default": "\/products\/opinion-coat"
       },
       {
         "id": "productsPedestrianSweaterUrl",
         "type": "text",
-        "default": "/products/pedestrian-sweater"
+        "default": "\/products\/pedestrian-sweater"
       },
       {
         "id": "productsProgressShirtUrl",
         "type": "text",
-        "default": "/products/progress-shirt"
+        "default": "\/products\/progress-shirt"
       },
       {
         "id": "artMarketTShirtUrl",
         "type": "text",
-        "default": "/products/art-market-t-shirt"
+        "default": "\/products\/art-market-t-shirt"
       },
       {
         "id": "artistsTShirtUrl",
         "type": "text",
-        "default": "/products/artists-t-shirt"
+        "default": "\/products\/artists-t-shirt"
       },
       {
         "id": "blowerShirtUrl",
         "type": "text",
-        "default": "/products/blower-shirt"
+        "default": "\/products\/blower-shirt"
       },
       {
         "id": "democraticSweaterUrl",
         "type": "text",
-        "default": "/products/democratic-sweater"
+        "default": "\/products\/democratic-sweater"
       },
       {
         "id": "murderousCoatUrl",
         "type": "text",
-        "default": "/products/murderous-coat"
+        "default": "\/products\/murderous-coat"
       },
       {
-        "id": "naturalDisasterLongSleeveUrl",
+        "id": "disasterLongSleeveUrl",
         "type": "text",
-        "default": "/products/disaster-long-sleeve"
+        "default": "\/products\/disaster-long-sleeve"
       },
       {
         "id": "deliveryUrl",
         "type": "text",
-        "default": "/pages/delivery-and-returns"
+        "default": "\/pages\/delivery-and-returns"
       },
       {
         "id": "termsUrl",
         "type": "text",
-        "default": "/pages/terms-and-conditions"
+        "default": "\/pages\/terms-and-conditions"
       },
       {
         "id": "retailersUrl",
         "type": "text",
-        "default": "/pages/retailers"
+        "default": "\/pages\/retailers"
       },
       {
         "id": "contactUrl",
         "type": "text",
-        "default": "/pages/contact-us"
+        "default": "\/pages\/contact-us"
       },
       {
         "id": "aboutUrl",
         "type": "text",
-        "default": "/pages/about"
+        "default": "\/pages\/about"
       },
       {
         "id": "instagramUrl",
         "type": "text",
-        "default": "https://www.instagram.com/sagmeister123/?hl=en"
+        "default": "https:\/\/www.instagram.com\/sagmeister123\/?hl=en"
       }
     ]
   },
