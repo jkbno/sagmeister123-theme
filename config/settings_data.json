@@ -1,5 +1,15 @@
 {
   "current": {
+    "favicon": "shopify:\/\/shop_images\/Favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Color_Black.png",
+    "checkout_body_background_color": "#e0f9ff",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_color": "#e0f9ff",
+    "checkout_heading_font": "Lato",
+    "checkout_body_font": "Lato",
+    "checkout_accent_color": "#01303f",
+    "checkout_button_color": "#000000",
+    "checkout_error_color": "#f73eff",
     "sections": {
       "header": {
         "type": "header",
@@ -16,7 +26,10 @@
         "settings": {
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
